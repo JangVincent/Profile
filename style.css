@@ -342,6 +342,14 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
+.company-summary {
+  grid-column: 1 / -1;
+}
+
+.project-card:first-child {
+  grid-column: 1 / -1;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -813,6 +821,14 @@ body {
     margin: 0;
   }
   
+  .company-summary {
+    grid-column: 1 / -1;
+  }
+
+  .project-card:first-child {
+    grid-column: 1 / -1;
+  }
+  
   .project-tabs {
     flex-direction: row;
     flex-wrap: wrap;
@@ -950,6 +966,14 @@ body {
   
   .project-card {
     margin: 0;
+  }
+  
+  .company-summary {
+    grid-column: 1 / -1;
+  }
+
+  .project-card:first-child {
+    grid-column: 1 / -1;
   }
   
   .project-content {
@@ -1100,6 +1124,14 @@ body {
     margin: 0;
   }
   
+  .company-summary {
+    grid-column: 1 / -1;
+  }
+
+  .project-card:first-child {
+    grid-column: 1 / -1;
+  }
+  
   .tab-button {
     min-width: 80px;
     padding: 6px 10px;
@@ -1140,6 +1172,14 @@ body {
   .skills-grid,
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .company-summary {
+    grid-column: 1 / -1;
+  }
+
+  .project-card:first-child {
+    grid-column: 1 / -1;
   }
 }
 
