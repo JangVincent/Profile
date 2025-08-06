@@ -350,6 +350,11 @@ body {
   grid-column: 1 / -1;
 }
 
+/* Personal projects don't need full width for first card */
+.personal-project:first-child {
+  grid-column: auto;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -829,6 +834,10 @@ body {
     grid-column: 1 / -1;
   }
   
+  .personal-project:first-child {
+    grid-column: auto;
+  }
+  
   .project-tabs {
     flex-direction: row;
     flex-wrap: wrap;
@@ -974,6 +983,10 @@ body {
 
   .project-card:first-child {
     grid-column: 1 / -1;
+  }
+  
+  .personal-project:first-child {
+    grid-column: auto;
   }
   
   .project-content {
@@ -1132,6 +1145,10 @@ body {
     grid-column: 1 / -1;
   }
   
+  .personal-project:first-child {
+    grid-column: auto;
+  }
+  
   .tab-button {
     min-width: 80px;
     padding: 6px 10px;
@@ -1180,6 +1197,10 @@ body {
 
   .project-card:first-child {
     grid-column: 1 / -1;
+  }
+  
+  .personal-project:first-child {
+    grid-column: auto;
   }
 }
 

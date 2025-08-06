@@ -373,7 +373,7 @@ function createProjectTabs(careerData, workProjectsData, personalProjectsData) {
         // Use actual project data
         if (company === 'Personal' && personalProjectsData && personalProjectsData.length > 0) {
             projectGrid.innerHTML = personalProjectsData.map(project => `
-                <div class="project-card">
+                <div class="project-card personal-project">
                     <div class="project-image">
                         <span class="material-icons">code</span>
                     </div>
