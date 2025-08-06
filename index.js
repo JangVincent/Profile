@@ -164,7 +164,26 @@ async function loadProfileData() {
         const profileData = await response.json();
         updateProfilePage(profileData);
     } catch (error) {
+        console.log('Profile data load failed, using default values:', error);
         // Use default information if error occurs
+        // Social links are already set in HTML, so they will work even without profile.json
+    }
+}
+
+// Update social links
+function updateSocialLinks(socialLinksData) {
+    if (socialLinksData) {
+        const socialLinks = document.querySelectorAll('.social-link');
+        socialLinks.forEach(link => {
+            const platform = link.getAttribute('data-platform');
+            if (socialLinksData[platform]) {
+                link.href = socialLinksData[platform];
+                // Add target="_blank" for external links (except email)
+                if (platform !== 'email') {
+                    link.setAttribute('target', '_blank');
+                }
+            }
+        });
     }
 }
 
@@ -207,15 +226,7 @@ function updateProfilePage(data) {
     }
     
     // Social links update
-    if (data.socialLinks) {
-        const socialLinks = document.querySelectorAll('.social-link');
-        socialLinks.forEach(link => {
-            const platform = link.getAttribute('data-platform');
-            if (data.socialLinks[platform]) {
-                link.href = data.socialLinks[platform];
-            }
-        });
-    }
+    updateSocialLinks(data.socialLinks);
     
     // Skills update
     if (data.skills) {
