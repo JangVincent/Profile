@@ -1,0 +1,221 @@
+{
+  "basicInfo": {
+    "name": "Vincent Jang",
+    "title": "Backend Engineer",
+    "tagline": "Rather than a developer who shines alone, I aspire to be like the moon, harmonizing with the light of others.",
+    "introduction": "I'm a backend developer passionate about building things I'd actually want to use myself. I thrive on learning new languages and frameworks based on project needs – currently exploring Go, Flutter, and system architecture. I've been creating bugs since 2011 and believe the best projects come from curiosity and solving real problems."
+  },
+  "contact": {
+    "email": "vincentjangdev@gmail.com",
+    "location": "Seoul, South Korea (KR)"
+  },
+  "socialLinks": {
+    "devto": "https://dev.to/vincentjang",
+    "github": "https://github.com/JangVincent",
+    "linkedin": "https://www.linkedin.com/in/vincentjang/",
+    "x": "https://x.com/vincent_j_dev",
+    "email": "mailto:vincentjangdev@gmail.com"
+  },
+  "education": {
+    "school": "Seoul National University of Science and Technology",
+    "degree": "Bachelor’s in Computer Engineering",
+    "period": "Feb 2014 – Feb 2021"
+  },
+  "career": [
+    {
+      "company": "Gomble",
+      "position": "Tech Lead",
+      "period": "Dec 2024 – Present"
+    },
+    {
+      "company": "CatzeLabs Pte. Ltd.",
+      "position": "Backend Developer",
+      "period": "Aug 2022 – Oct 2024"
+    },
+    {
+      "company": "VSQUARE",
+      "position": "Full Stack Developer",
+      "period": "Dec 2020 – Dec 2021"
+    }
+  ],
+  "personalProjects": [
+    {
+      "name": "Timespace",
+      "url": "https://github.com/JangVincent/TimeSpace",
+      "period": "Dec 2022 – Apr 2023",
+      "description": "VS Code extension displaying local and UTC time in the status bar",
+      "features": ["Todo list", "Alarm feature"],
+      "techStack": ["TypeScript", "VS Code API"]
+    },
+    {
+      "name": "txview",
+      "url": "https://github.com/JangVincent/txview",
+      "period": "Nov 2023 – Nov 2023",
+      "description": "CLI tool for viewing transactions",
+      "features": ["Transaction lookup", "Homebrew package distribution"],
+      "techStack": ["Rust", "CLI"]
+    }
+  ],
+  "workProjects": {
+    "VSQUARE": {
+      "period": "Dec 2020 – Dec 2021",
+      "summary": "Handled frontend integration, CMS development, backend logic, and API development. Supported company revenue growth significantly within two quarters.",
+      "tools": {
+        "IDE": ["IntelliJ IDEA"],
+        "Groupware": ["Slack", "Zeplin", "FileZilla"],
+        "CI/CD": ["Jenkins"],
+        "VersionControl": ["Git"]
+      },
+      "projects": [
+        {
+          "name": "Chongshin University",
+          "role": "Frontend",
+          "url": "http://www.chongshin.ac.kr",
+          "description": "Publishing and frontend integration; Backoffice integration for student lookup, certificate printing, and legacy migration",
+          "techStack": ["JavaScript", "HTML5", "CSS"]
+        },
+        {
+          "name": "Jaseng Korean Medicine Hospital",
+          "role": "Frontend",
+          "url": "https://jaseng.education",
+          "description": "Publishing, internal email logic, LMS certificate PDF, and paid lecture coupon system",
+          "techStack": ["JavaScript", "HTML5", "CSS", "Spring"]
+        },
+        {
+          "name": "Korea Women’s Human Rights Institute",
+          "role": "Frontend",
+          "url": "http://edu.stop.or.kr",
+          "description": "Full frontend logic for sign-up/login to certificate printing flow, including carousel development",
+          "techStack": ["JavaScript", "HTML5", "CSS", "Spring"]
+        },
+        {
+          "name": "Jeonghwa Arts University",
+          "role": "Frontend/Backend",
+          "url": "http://jb.ac.kr",
+          "description": "Main page content integration and academic information system development",
+          "techStack": ["JavaScript", "HTML5", "CSS", "Spring", "MyBatis"]
+        },
+        {
+          "name": "Childcare Meal Management Support Center",
+          "role": "Backend",
+          "url": "https://eip.ccfsm.or.kr/",
+          "description": "Meal management CMS development and meal plan editing feature",
+          "techStack": ["JavaScript", "Spring", "MyBatis"]
+        },
+        {
+          "name": "Meal Plan Service",
+          "role": "Backend",
+          "url": "https://menuplan.ccfsm.or.kr/",
+          "description": "Developed meal plan editor, nutrition statistics export, and backend APIs",
+          "techStack": ["JavaScript", "Spring", "MyBatis"]
+        },
+        {
+          "name": "Project Cygnus",
+          "role": "Backend",
+          "description": "E-commerce solution using Spring, MyBatis, jQuery, and VanillaJS",
+          "techStack": ["Spring", "MyBatis", "jQuery", "JavaScript"]
+        }
+      ]
+    },
+    "CatzeLabs": {
+      "period": "Aug 2022 – Oct 2024",
+      "summary": "Led backend development of Web3 game platforms, real-time token conversion systems, and internal tools. Achieved multiple hackathon wins and contributed to company investment milestones.",
+      "tools": {
+        "IDE": ["VS Code", "Neovim"],
+        "Groupware": ["Slack", "Figma", "Notion"],
+        "CI/CD": ["GitHub Actions", "EKS", "GCP", "Kubernetes"],
+        "VersionControl": ["Git"]
+      },
+      "projects": [
+        {
+          "name": "Yooldo",
+          "role": "Backend",
+          "url": "https://app.yooldo.gg",
+          "description": "NFT-based P2E game platform with Web3 indexer logic and token conversion system",
+          "techStack": ["TypeScript", "NestJS", "Web3", "Google OAuth"]
+        },
+        {
+          "name": "Alice-bot",
+          "role": "Backend",
+          "description": "Discord bot with virtual currency and Twitter API integration",
+          "techStack": ["TypeScript", "Discord API"]
+        },
+        {
+          "name": "KUP",
+          "role": "Staff",
+          "url": "https://kup.vercel.app",
+          "description": "KlayMakers22 Hackathon project, NFT & Metaverse track winner",
+          "techStack": ["NextJS", "Web3"]
+        },
+        {
+          "name": "R3plica",
+          "role": "Backend",
+          "url": "https://r3plica-web.vercel.app",
+          "description": "Hackathon project winning 2nd place in BNB Chain and 1st in Coinbase Buidle The Future",
+          "techStack": ["TypeScript", "NestJS"]
+        },
+        {
+          "name": "Aptoplay",
+          "role": "Backend",
+          "url": "https://aptoplay-web.vercel.app/",
+          "description": "Hackathon project winning 1st place in Aptos Seoul Hack 2023; built aptoplay-core library",
+          "techStack": ["TypeScript", "NestJS"]
+        },
+        {
+          "name": "Aptoplay-core",
+          "role": "Library",
+          "url": "https://www.npmjs.com/package/aptoplay-core",
+          "description": "Core library for Aptoplay platform",
+          "techStack": ["TypeScript", "NestJS"]
+        },
+        {
+          "name": "Trouble Punk Game Server",
+          "role": "Backend",
+          "description": "P2E game server for Cybergalz; built with Firebase Firestore",
+          "techStack": ["NestJS", "Firebase"]
+        },
+        {
+          "name": "Catze Backoffice",
+          "role": "Backend",
+          "description": "Internal backoffice with Google OAuth, Slack OTP, and QR code 2FA",
+          "techStack": ["TypeScript", "NestJS", "gRPC"]
+        },
+        {
+          "name": "Catze Nest Logger",
+          "role": "Library",
+          "description": "NestJS logger library with decorator-based injection and method tracing",
+          "techStack": ["TypeScript", "NestJS"]
+        },
+        {
+          "name": "Catze Nest Crypto",
+          "role": "Library",
+          "description": "Bidirectional encryption library implementing envelope encryption",
+          "techStack": ["TypeScript", "NestJS"]
+        },
+        {
+          "name": "Brickgirls",
+          "role": "Backend",
+          "description": "Telegram Web3 game publishing; API and DB schema design",
+          "techStack": ["NestJS", "Telegram Bot API"]
+        }
+      ]
+    }
+  },
+  "skills": {
+    "languages": ["TypeScript", "JavaScript", "Java", "Rust"],
+    "frameworksLibraries": [
+      "NestJS",
+      "Fastify",
+      "Express",
+      "React",
+      "Vue",
+      "Spring",
+      "Spring Boot",
+      "jQuery"
+    ],
+    "databases": ["MySQL", "MariaDB", "Redis", "PostgreSQL", "MongoDB"],
+    "cloudDevOps": ["Docker", "AWS ECR/ECS", "Github Actions", "GCP", "Kubernetes", "EKS"],
+    "tools": ["VS Code", "Neovim", "IntelliJ IDEA", "Slack", "Notion", "Insomnia", "Git", "GitHub"]
+  },
+  "licenses": ["Linux Master Level 2 (2015)", "TOEIC 720 (2021)"]
+}
