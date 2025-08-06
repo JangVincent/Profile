@@ -99,29 +99,9 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollTop = scrollTop;
     });
 
-    // Typing effect
-    function typeWriter(element, text, speed = 100) {
-        let i = 0;
-        element.innerHTML = '';
-        
-        function type() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-        type();
-    }
+    // Typing effect removed - using CSS animations instead
 
-    // Apply typing effect to profile name
-    const profileName = document.getElementById('profileName');
-    if (profileName && profileName.textContent) {
-        const originalText = profileName.textContent;
-        setTimeout(() => {
-            typeWriter(profileName, originalText, 150);
-        }, 1000);
-    }
+    // Profile name will use CSS animation only (typing effect removed)
 
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

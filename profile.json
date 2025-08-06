@@ -2,8 +2,8 @@
   "basicInfo": {
     "name": "Vincent Jang",
     "title": "Backend Engineer",
-    "tagline": "Rather than a developer who shines alone, I aspire to be like the moon, harmonizing with the light of others.",
-    "introduction": "I'm a backend developer passionate about building things I'd actually want to use myself. I thrive on learning new languages and frameworks based on project needs – currently exploring Go, Flutter, and system architecture. I've been creating bugs since 2011 and believe the best projects come from curiosity and solving real problems."
+    "tagline": "Rather than a engineer who shines alone, I aspire to be like the moon, harmonizing with the light of others.",
+    "introduction": "I'm a backend engineer passionate about building products I would personally want to use — driven by curiosity and solving real problems. With extensive startup experience, I've helped improve workflows, led communication across teams, and even established internal libraries, frameworks, and coding conventions from the ground up. Always eager to learn, I thrive on exploring new languages and architectures, recently diving into Go, Flutter, and system-level design."
   },
   "contact": {
     "email": "vincentjangdev@gmail.com",
@@ -29,12 +29,12 @@
     },
     {
       "company": "CatzeLabs Pte. Ltd.",
-      "position": "Backend Developer",
+      "position": "Backend Engineer",
       "period": "Aug 2022 – Oct 2024"
     },
     {
       "company": "VSQUARE",
-      "position": "Full Stack Developer",
+      "position": "Full Stack Engineer",
       "period": "Dec 2020 – Dec 2021"
     }
   ],
@@ -59,7 +59,7 @@
   "workProjects": {
     "VSQUARE": {
       "period": "Dec 2020 – Dec 2021",
-      "summary": "Handled frontend integration, CMS development, backend logic, and API development. Supported company revenue growth significantly within two quarters.",
+      "summary": "Handled frontend integration, CMS development, backend logic, and API development. Contributed to significant revenue growth within two quarters by delivering stable academic and LMS platforms for universities and public institutions.",
       "tools": {
         "IDE": ["IntelliJ IDEA"],
         "Groupware": ["Slack", "Zeplin", "FileZilla"],
@@ -71,55 +71,55 @@
           "name": "Chongshin University",
           "role": "Frontend",
           "url": "http://www.chongshin.ac.kr",
-          "description": "Publishing and frontend integration; Backoffice integration for student lookup, certificate printing, and legacy migration",
+          "description": "Integrated academic systems for student lookup, certificate printing, and legacy migration; handled publishing and responsive frontend tasks.",
           "techStack": ["JavaScript", "HTML5", "CSS"]
         },
         {
           "name": "Jaseng Korean Medicine Hospital",
           "role": "Frontend",
           "url": "https://jaseng.education",
-          "description": "Publishing, internal email logic, LMS certificate PDF, and paid lecture coupon system",
-          "techStack": ["JavaScript", "HTML5", "CSS", "Spring"]
+          "description": "Implemented internal email system, LMS certificate PDFs, and paid lecture coupon features; handled frontend publishing and API integration.",
+          "techStack": ["JavaScript", "Spring", "HTML5", "CSS"]
         },
         {
           "name": "Korea Women’s Human Rights Institute",
           "role": "Full Stack",
           "url": "http://edu.stop.or.kr",
-          "description": "Full frontend logic for sign-up/login to certificate printing flow, including carousel development",
-          "techStack": ["JavaScript", "HTML5", "CSS", "Spring"]
+          "description": "Built full LMS frontend logic from sign-up to certificate printing; developed carousel animation and member flow logic.",
+          "techStack": ["JavaScript", "Spring", "HTML5", "CSS"]
         },
         {
           "name": "Jeonghwa Arts University",
           "role": "Full Stack",
           "url": "http://jb.ac.kr",
-          "description": "Main page content integration and academic information system development",
-          "techStack": ["JavaScript", "HTML5", "CSS", "Spring", "MyBatis"]
+          "description": "Developed academic information system with CMS integration, including Chart.js visualizations, data tables, and API endpoints.",
+          "techStack": ["Spring", "MyBatis", "JavaScript", "HTML5", "CSS"]
         },
         {
           "name": "Childcare Meal Management Support Center",
-          "role": "Full Stack",
+          "role": "Backend",
           "url": "https://eip.ccfsm.or.kr/",
-          "description": "Meal management CMS development and meal plan editing feature",
-          "techStack": ["JavaScript", "Spring", "MyBatis"]
+          "description": "Built meal plan CMS, including editable menu features, recipe management, and nutrition statistics export.",
+          "techStack": ["Spring", "MyBatis", "JavaScript"]
         },
         {
           "name": "Meal Plan Service",
-          "role": "Full Stack",
+          "role": "Backend",
           "url": "https://menuplan.ccfsm.or.kr/",
-          "description": "Developed meal plan editor, nutrition statistics export, and backend APIs",
-          "techStack": ["JavaScript", "Spring", "MyBatis"]
+          "description": "Developed meal plan editing, API endpoints, and LMS business logic, enabling Excel nutrition statistics export.",
+          "techStack": ["Spring", "MyBatis", "JavaScript"]
         },
         {
           "name": "Project Cygnus",
           "role": "Full Stack",
-          "description": "E-commerce solution using Spring, MyBatis, jQuery, and VanillaJS",
+          "description": "E-commerce solution built with Spring and MyBatis; implemented product management, category handling, payment gateway integration, and preview features.",
           "techStack": ["Spring", "MyBatis", "jQuery", "JavaScript"]
         }
       ]
     },
     "CatzeLabs": {
       "period": "Aug 2022 – Oct 2024",
-      "summary": "Led the development of Web3 game platforms, real-time token conversion systems, CMS, and internal developer tools. Won multiple hackathons and contributed to the team’s successful funding from ConsenSys.",
+      "summary": "Led backend architecture for Web3 game platforms, token conversion systems, and internal tools. Contributed to four Web3 hackathon wins and ConsenSys investment. Migrated legacy batch systems to real-time processing and implemented secure communications with gRPC and 2FA.",
       "tools": {
         "IDE": ["VS Code", "Neovim"],
         "Groupware": ["Slack", "Figma", "Notion"],
@@ -129,76 +129,119 @@
       "projects": [
         {
           "name": "Yooldo",
-          "role": "Backend",
+          "role": "Backend Lead",
           "url": "https://app.yooldo.gg",
-          "description": "NFT-based P2E game platform with Web3 indexer logic and token conversion system",
-          "techStack": ["TypeScript", "NestJS", "Web3", "Google OAuth"]
+          "description": "Full backend development for NFT-based P2E platform serving 900K+ users. Implemented Web3 indexers, real-time token ↔ game currency conversions, Google OAuth, and anti-abuse judicial system.",
+          "techStack": ["TypeScript", "NestJS", "Web3", "Google OAuth", "Redis"]
         },
         {
           "name": "Alice-bot",
-          "role": "Backend",
-          "description": "Discord bot with virtual currency and Twitter API integration",
-          "techStack": ["TypeScript", "Discord API"]
+          "role": "Backend Engineer",
+          "description": "Discord bot for CyberGalz community integrating virtual currency economy and Twitter-based content filters; linked with other CatzeLabs products.",
+          "techStack": ["TypeScript", "Discord API", "Web3"]
         },
         {
           "name": "KUP",
-          "role": "Staff",
+          "role": "Hackathon Staff",
           "url": "https://kup.vercel.app",
-          "description": "KlayMakers22 Hackathon project, NFT & Metaverse track winner",
-          "techStack": ["NextJS", "Web3"]
+          "description": "NFT & Metaverse hackathon project at KlayMakers22; awarded 1st place in track. Involved in initial planning and architecture discussions.",
+          "techStack": ["Next.js", "Web3"]
         },
         {
           "name": "R3plica",
-          "role": "Backend",
+          "role": "Backend Engineer",
           "url": "https://r3plica-web.vercel.app",
-          "description": "Hackathon project winning 2nd place in BNB Chain and 1st in Coinbase Buidle The Future",
-          "techStack": ["TypeScript", "NestJS"]
+          "description": "Hackathon project winning 2nd place (BNB Chain) and 1st place (Coinbase Buidle The Future). Built backend APIs, table schema, and Web3 indexers.",
+          "techStack": ["TypeScript", "NestJS", "Web3"]
         },
         {
           "name": "Aptoplay",
-          "role": "Backend",
+          "role": "Backend Lead",
           "url": "https://aptoplay-web.vercel.app/",
-          "description": "Hackathon project winning 1st place in Aptos Seoul Hack 2023; built aptoplay-core library",
-          "techStack": ["TypeScript", "NestJS"]
+          "description": "Hackathon-winning game platform (Aptos Seoul Hack 2023). Built complete backend and published aptoplay-core library to npm.",
+          "techStack": ["TypeScript", "NestJS", "Web3"]
         },
         {
           "name": "Aptoplay-core",
-          "role": "Library",
+          "role": "Library Author",
           "url": "https://www.npmjs.com/package/aptoplay-core",
-          "description": "Core library for Aptoplay platform",
+          "description": "Reusable library for Aptoplay; handles core Web3 gaming logic and state synchronization.",
           "techStack": ["TypeScript", "NestJS"]
         },
         {
           "name": "Trouble Punk Game Server",
-          "role": "Backend",
-          "description": "P2E game server for Cybergalz; built with Firebase Firestore",
-          "techStack": ["NestJS", "Firebase"]
+          "role": "Backend Engineer",
+          "description": "P2E game server for Cybergalz ‘Trouble-punk’ using Firebase Firestore; implemented league and reward settlement systems.",
+          "techStack": ["NestJS", "Firebase", "Web3"]
         },
         {
           "name": "Catze Backoffice",
-          "role": "Backend",
-          "description": "Internal backoffice with Google OAuth, Slack OTP, and QR code 2FA",
+          "role": "Backend Lead",
+          "description": "Comprehensive internal management system integrating Google OAuth, Slack OTP, and QR-based 2FA. Managed multiple products via unified dashboard.",
           "techStack": ["TypeScript", "NestJS", "gRPC"]
         },
         {
           "name": "Catze Nest Logger",
-          "role": "Library",
-          "description": "NestJS logger library with decorator-based injection and method tracing",
+          "role": "Library Author",
+          "description": "Decorator-based NestJS logger enabling automatic method tracing and log injection; initiated company-wide logging standards.",
           "techStack": ["TypeScript", "NestJS"]
         },
         {
           "name": "Catze Nest Crypto",
-          "role": "Library",
-          "description": "Bidirectional encryption library implementing envelope encryption",
-          "techStack": ["TypeScript", "NestJS"]
+          "role": "Library Author",
+          "description": "Bidirectional encryption library implementing envelope encryption; used across CatzeLabs internal services for secure payload handling.",
+          "techStack": ["TypeScript", "NestJS", "Crypto"]
         },
         {
           "name": "Brickgirls",
-          "role": "Backend",
-          "description": "Telegram Web3 game publishing; API and DB schema design",
-          "techStack": ["NestJS", "Telegram Bot API"]
+          "role": "Backend Engineer",
+          "description": "Telegram Web3 game publishing platform; designed RDB schema, APIs, and Telegram Bot integration for gameplay events.",
+          "techStack": ["NestJS", "Telegram Bot API", "Web3"]
         }
       ]
+    },
+    "Gomble": {
+    "period": "Dec 2024 – Present",
+    "summary": "Serving as Tech Lead, handled large-scale events like TGE and Launchpool #3, ensuring stable processing of 4K–60K RPS traffic. Improved server infrastructure, backend code quality, and internal conventions while resolving technical debt and enhancing data visibility for business decisions.",
+    "tools": {
+      "IDE": ["VS Code", "Cursor", "Neovim"],
+      "Groupware": ["Slack", "Figma", "Notion"],
+      "CI/CD": ["GitHub Actions", "AWS ECR/ECS"],
+      "VersionControl": ["Git"]
+    },
+    "projects": [
+      {
+        "name": "Minigame Server",
+        "role": "Backend Lead",
+        "description": "Unified server for multiple minigames within Gomble Squad. Established backend template and coding conventions across the team.",
+        "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redis"]
+      },
+      {
+        "name": "Gomble Squad",
+        "role": "Backend Lead",
+        "description": "Implemented large-scale Launchpool #3 event; introduced Redash for business-level data visibility and analytics.",
+        "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redash"]
+      },
+      {
+        "name": "TGE",
+        "role": "Backend Lead",
+        "url": "https://token.gomble.io",
+        "description": "Handled 4K–60K req/sec traffic during token generation event; integrated Web3 asset indexing for accurate event data processing.",
+        "techStack": ["TypeScript", "NestJS", "Web3", "AWS ECS"]
+      },
+      {
+        "name": "Gomble Builders",
+        "role": "Backend Engineer",
+        "description": "Developed NFT-based voting system to select in-game characters. Implemented NFT indexing and optimized infrastructure costs via ECR/ECS.",
+        "techStack": ["TypeScript", "NestJS", "Web3", "AWS ECR/ECS"]
+      },
+      {
+        "name": "Mew Survivor",
+        "role": "Backend Engineer",
+        "description": "External game server project integrating Google/Apple OAuth login and in-app purchase (IAP) logic.",
+        "techStack": ["TypeScript", "NestJS", "Google OAuth", "Apple OAuth"]
+      }
+    ]
     }
   },
   "skills": {
