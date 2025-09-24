@@ -16,10 +16,21 @@
     "x": "https://x.com/vincent_j_dev",
     "email": "mailto:vincentjangdev@gmail.com"
   },
-  "education": {
-    "school": "Seoul National University of Science and Technology",
-    "degree": "Bachelor’s in Computer Engineering",
-    "period": "Feb 2014 – Feb 2021"
+   "skills": {
+    "languages": ["TypeScript", "JavaScript", "Java", "Rust"],
+    "frameworksLibraries": [
+      "NestJS",
+      "Fastify",
+      "Express",
+      "React",
+      "Vue",
+      "Spring",
+      "Spring Boot",
+      "jQuery"
+    ],
+    "databases": ["MySQL", "MariaDB", "Redis", "PostgreSQL", "MongoDB"],
+    "cloudDevOps": ["Docker", "AWS ECR/ECS", "Github Actions", "Terraform", "K8S"],
+    "tools": ["VS Code", "Neovim", "IntelliJ IDEA", "Slack", "Notion", "Insomnia", "Git", "GitHub"]
   },
   "career": [
     {
@@ -38,24 +49,7 @@
       "period": "Dec 2020 – Dec 2021"
     }
   ],
-  "personalProjects": [
-    {
-      "name": "Timespace",
-      "url": "https://github.com/JangVincent/TimeSpace",
-      "period": "Dec 2022 – Apr 2023",
-      "description": "VS Code extension displaying local and UTC time in the status bar",
-      "features": ["Todo list", "Alarm feature"],
-      "techStack": ["TypeScript", "VS Code API"]
-    },
-    {
-      "name": "txview",
-      "url": "https://github.com/JangVincent/txview",
-      "period": "Nov 2023 – Nov 2023",
-      "description": "CLI tool for viewing transactions",
-      "features": ["Transaction lookup", "Homebrew package distribution"],
-      "techStack": ["Rust", "CLI"]
-    }
-  ],
+  
   "workProjects": {
     "VSQUARE": {
       "period": "Dec 2020 – Dec 2021",
@@ -64,7 +58,7 @@
         "IDE": ["IntelliJ IDEA"],
         "Groupware": ["Slack", "Zeplin", "FileZilla"],
         "CI/CD": ["Jenkins"],
-        "VersionControl": ["Git"]
+        "VersionControl": ["Git/Github"]
       },
       "projects": [
         {
@@ -123,8 +117,8 @@
       "tools": {
         "IDE": ["VS Code", "Neovim"],
         "Groupware": ["Slack", "Figma", "Notion"],
-        "CI/CD": ["GitHub Actions", "EKS", "GCP", "Kubernetes"],
-        "VersionControl": ["Git"]
+        "CI/CD": ["GitHub Actions", "K8S","EKS", "GCP"],
+        "VersionControl": ["Git/Github"]
       },
       "projects": [
         {
@@ -207,7 +201,7 @@
       "IDE": ["VS Code", "Cursor", "Neovim"],
       "Groupware": ["Slack", "Figma", "Notion"],
       "CI/CD": ["GitHub Actions", "AWS ECR/ECS"],
-      "VersionControl": ["Git"]
+      "VersionControl": ["Git/Github"]
     },
     "projects": [
       {
@@ -244,21 +238,28 @@
     ]
     }
   },
-  "skills": {
-    "languages": ["TypeScript", "JavaScript", "Java", "Rust"],
-    "frameworksLibraries": [
-      "NestJS",
-      "Fastify",
-      "Express",
-      "React",
-      "Vue",
-      "Spring",
-      "Spring Boot",
-      "jQuery"
-    ],
-    "databases": ["MySQL", "MariaDB", "Redis", "PostgreSQL", "MongoDB"],
-    "cloudDevOps": ["Docker", "AWS ECR/ECS", "Github Actions", "GCP", "Kubernetes", "EKS"],
-    "tools": ["VS Code", "Neovim", "IntelliJ IDEA", "Slack", "Notion", "Insomnia", "Git", "GitHub"]
+  "personalProjects": [
+    {
+      "name": "Timespace",
+      "url": "https://github.com/JangVincent/TimeSpace",
+      "period": "Dec 2022 – Apr 2023",
+      "description": "VS Code extension displaying local and UTC time in the status bar",
+      "features": ["Todo list", "Alarm feature"],
+      "techStack": ["TypeScript", "VS Code API"]
+    },
+    {
+      "name": "txview",
+      "url": "https://github.com/JangVincent/txview",
+      "period": "Nov 2023 – Nov 2023",
+      "description": "CLI tool for viewing transactions",
+      "features": ["Transaction lookup", "Homebrew package distribution"],
+      "techStack": ["Rust", "CLI"]
+    }
+  ],
+  "education": {
+    "school": "Seoul National University of Science and Technology",
+    "degree": "Bachelor’s in Computer Engineering",
+    "period": "Feb 2014 – Feb 2021"
   },
-  "licenses": ["Linux Master Level 2 (2015)", "TOEIC 720 (2021)"]
+  "licenses": ["Linux Master(KR) Level 2 (2015)", "TOEIC 720 (2021)"]
 }
