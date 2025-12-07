@@ -34,9 +34,14 @@
   },
   "career": [
     {
+      "company": "AIM Intelligence",
+      "position": "Backend Engineer",
+      "period": "Nov 2025 – Present"
+    },
+    {
       "company": "Gomble",
       "position": "Tech Lead",
-      "period": "Dec 2024 – Present"
+      "period": "Dec 2024 – Nov 2025"
     },
     {
       "company": "CatzeLabs Pte. Ltd.",
@@ -236,6 +241,24 @@
         "techStack": ["TypeScript", "NestJS", "Google OAuth", "Apple OAuth"]
       }
     ]
+    },
+    "AIM Intelligence": {
+      "period": "Nov 2025 – Present",
+      "summary": "Serving as Backend Engineer, contributed to the development of a new product that helps businesses automate their workflows and improve their efficiency.",
+      "tools": {
+        "IDE": ["VS Code", "Cursor", "Neovim"],
+        "Groupware": ["Slack", "Eraser", "Linear", "Notion"],
+        "CI/CD": ["GitHub Actions", "AWS EKS"],
+        "VersionControl": ["Git/Github"]
+      },
+      "projects": [
+        {
+          "name": "AI Guardrail and backoffice server",
+          "role": "Backend Engineer",
+          "description": "I’ve finished the architectural redesign and established the core patterns; the remaining work is mainly implementation, but completing it alone within the current timeline is difficult.",
+          "techStack": ["TypeScript", "NestJS", "Python", "FastAPI", "AWS EKS"]
+        }
+      ]
     }
   },
   "personalProjects": [
