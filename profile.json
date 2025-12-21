@@ -3,7 +3,7 @@
     "name": "Vincent Jang",
     "title": "Backend Engineer",
     "tagline": "Rather than a engineer who shines alone, I aspire to be like the moon, harmonizing with the light of others.",
-    "introduction": "I'm a backend engineer passionate about building products I would personally want to use — driven by curiosity and solving real problems. With extensive startup experience, I've helped improve workflows, led communication across teams, and even established internal libraries, frameworks, and coding conventions from the ground up. Always eager to learn, I thrive on exploring new languages and architectures, recently diving into Go, Flutter, and system-level design."
+    "introduction": "I'm a backend engineer passionate about building products I would personally want to use — driven by curiosity and solving real problems. With extensive startup experience, I've helped improve workflows, led communication across teams, and even established internal libraries, frameworks, and coding conventions from the ground up. Always eager to learn, I thrive on exploring new languages and architectures, recently diving into Go, Python, and system-level design with Linux."
   },
   "contact": {
     "email": "vincentjangdev@gmail.com",
@@ -54,7 +54,7 @@
       "period": "Dec 2020 – Dec 2021"
     }
   ],
-  
+
   "workProjects": {
     "VSQUARE": {
       "period": "Dec 2020 – Dec 2021",
