@@ -1,47 +1,55 @@
 {
   "basicInfo": {
-    "name": "Vincent Jang",
-    "title": "Backend Engineer",
-    "tagline": "Rather than a engineer who shines alone, I aspire to be like the moon, harmonizing with the light of others.",
-    "introduction": "I'm a backend engineer passionate about building products I would personally want to use — driven by curiosity and solving real problems. With extensive startup experience, I've helped improve workflows, led communication across teams, and even established internal libraries, frameworks, and coding conventions from the ground up. Always eager to learn, I thrive on exploring new languages and architectures, recently diving into Go, Python, and system-level design with Linux."
+    "name": "Youngjin Jang (Vincent)",
+    "title": "Backend Engineer · Tech Lead",
+    "tagline": "Rather than a developer who shines alone, I aspire to be one who — like the moon — glows in harmony with the light of others.",
+    "introduction": "Backend engineer with 5+ years of experience leading core systems at early-stage startups across Web2 SaaS and Web3. My sweet spot is the Zero-to-One phase — turning a vague product idea into a production-grade backend that scales to enterprise customers and carries the next funding round. I love building tools that close the gap between emerging technology and the way teams actually work."
   },
   "contact": {
     "email": "vincentjangdev@gmail.com",
     "location": "Seoul, South Korea (KR)"
   },
   "socialLinks": {
-    "devto": "https://dev.to/vincentjang",
+    "homepage": "https://vincentjang.dev",
     "github": "https://github.com/JangVincent",
     "linkedin": "https://www.linkedin.com/in/vincentjang/",
+    "devto": "https://dev.to/vincentjang",
     "x": "https://x.com/vincent_j_dev",
     "email": "mailto:vincentjangdev@gmail.com"
   },
-   "skills": {
-    "languages": ["TypeScript", "JavaScript", "Java", "Rust"],
-    "frameworksLibraries": [
-      "NestJS",
-      "Fastify",
-      "Express",
-      "React",
-      "Vue",
-      "Spring",
-      "Spring Boot",
-      "jQuery"
+  "skills": {
+    "languages": ["TypeScript", "JavaScript", "Java", "Go (basics)", "Rust (basics)"],
+    "frameworksLibraries": ["NestJS", "Fastify", "Elysia (Bun)", "Spring Boot"],
+    "databases": ["PostgreSQL", "MySQL", "MariaDB", "Redis", "SQLite (FTS5)"],
+    "cloudDevOps": [
+      "AWS (ECS/EKS/RDS/CloudFront)",
+      "GCP (Cloud Run)",
+      "Kubernetes",
+      "Helm",
+      "Docker",
+      "Terraform",
+      "GitHub Actions (OIDC)",
+      "ArgoCD"
     ],
-    "databases": ["MySQL", "MariaDB", "Redis", "PostgreSQL", "MongoDB"],
-    "cloudDevOps": ["Docker", "AWS ECR/ECS", "Github Actions", "Terraform", "K8S"],
-    "tools": ["VS Code", "Neovim", "IntelliJ IDEA", "Slack", "Notion", "Insomnia", "Git", "GitHub"]
+    "tools": ["VS Code", "Cursor", "Neovim", "Slack", "Notion", "Figma", "Linear", "Insomnia", "Git", "GitHub"],
+    "web3": ["viem", "ethers", "EVM (Abstract / Aptos / BNB / Klaytn)", "EIP-1271/712", "NFT indexing"],
+    "observability": ["Loki", "Prometheus", "Grafana", "Langfuse", "Redash"]
   },
   "career": [
     {
       "company": "AIM Intelligence",
-      "position": "Backend Engineer",
-      "period": "Nov 2025 – Present"
+      "position": "Backend Manager",
+      "period": "Nov 2025 – May 2026"
+    },
+    {
+      "company": "Waifu Sweeper",
+      "position": "Backend Lead (Freelance · w/ YGG)",
+      "period": "2025 · Freelance"
     },
     {
       "company": "Gomble",
       "position": "Tech Lead",
-      "period": "Dec 2024 – Nov 2025"
+      "period": "Dec 2024 – Oct 2025"
     },
     {
       "company": "CatzeLabs Pte. Ltd.",
@@ -50,239 +58,289 @@
     },
     {
       "company": "VSQUARE",
-      "position": "Full Stack Engineer",
+      "position": "Software Engineer",
       "period": "Dec 2020 – Dec 2021"
     }
   ],
-
   "workProjects": {
-    "VSQUARE": {
-      "period": "Dec 2020 – Dec 2021",
-      "summary": "Handled frontend integration, CMS development, backend logic, and API development. Contributed to significant revenue growth within two quarters by delivering stable academic and LMS platforms for universities and public institutions.",
+    "AIM Intelligence": {
+      "period": "Nov 2025 – May 2026",
+      "summary": "Solely designed and shipped v1.0 of two products — Starfort (admin control plane) and Bastion-Guardian (sub-20ms GenAI DLP gateway) — at ~95% authorship across 668 commits in 6 months. Directly contributed to closing the company's Series A. Adopted by Korean enterprise partners across telecom and finance (LG, Hana, Kyobo, etc.) with both SaaS and On-Premise deployment.",
       "tools": {
-        "IDE": ["IntelliJ IDEA"],
-        "Groupware": ["Slack", "Zeplin", "FileZilla"],
-        "CI/CD": ["Jenkins"],
-        "VersionControl": ["Git/Github"]
+        "IDE": ["VS Code", "Cursor", "Neovim"],
+        "Groupware": ["Slack", "Linear", "Eraser", "Notion"],
+        "CI/CD": ["GitHub Actions (OIDC)", "AWS EKS (Helm)", "External Secrets"],
+        "VersionControl": ["Git/GitHub"]
       },
       "projects": [
         {
-          "name": "Chongshin University",
-          "role": "Frontend",
-          "url": "http://www.chongshin.ac.kr",
-          "description": "Integrated academic systems for student lookup, certificate printing, and legacy migration; handled publishing and responsive frontend tasks.",
-          "techStack": ["JavaScript", "HTML5", "CSS"]
+          "name": "Starfort — Admin Control Plane",
+          "role": "Backend Manager (Solo Architect)",
+          "description": "Designed an AWS IAM-inspired Policy Engine combining Role hierarchy (Company → Org → Project) auto-gating with IAM-style fine-grained policies in a 2-stage evaluation model. Built a PostgreSQL-based Transactional Outbox for at-least-once dual-write consistency with external Langfuse — without adding Redis/SQS. Implemented 3-tier in-memory cache with single-flight pattern and cross-instance invalidation for Bastion-Guardian's hot path. Designed a read/write-domain-separated monorepo (admin + bridge) with EKS Helm and credential-less CI/CD via GitHub Actions OIDC.",
+          "techStack": ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "AWS EKS", "Helm", "GitHub Actions"]
         },
         {
-          "name": "Jaseng Korean Medicine Hospital",
-          "role": "Frontend",
-          "url": "https://jaseng.education",
-          "description": "Implemented internal email system, LMS certificate PDFs, and paid lecture coupon features; handled frontend publishing and API integration.",
-          "techStack": ["JavaScript", "Spring", "HTML5", "CSS"]
+          "name": "Bastion-Guardian — GenAI DLP Gateway",
+          "role": "Backend Manager (Solo Architect)",
+          "description": "Sub-20ms hot-path latency through layered in-memory cache and lightweight pre-check branching. Adopted Bun runtime + single-binary + distroless image for fast cold starts and minimal attack surface. Designed a 14-step parsing DSL and built a from-scratch jq mini-interpreter (lexer / parser / AST cache / evaluator) — zero jq/WASM deps — to handle heterogeneous AI service protocols (ChatGPT REST JSON, M365 Copilot SignalR WebSocket, Claude, multipart, base64). Provides an OpenAI-compatible gateway (drop-in API key) and a JWT + Serial Key Desktop Agent flow with silent recovery for unassigned states.",
+          "techStack": ["Bun", "TypeScript", "zod", "jose", "pino", "Langfuse", "Helm", "distroless"]
+        }
+      ]
+    },
+    "Waifu Sweeper": {
+      "period": "2025 · Freelance",
+      "summary": "Web3 wallet-based Minesweeper RPG built on Abstract zk-rollup with NFT/SBT/Shop contracts; collaborated with YGG (Yield Guild Games) on Partner API. Solo authorship of 60/61 backend commits. 10K+ DAU and 100M+ KRW cumulative payments.",
+      "tools": {
+        "IDE": ["VS Code", "Neovim"],
+        "Groupware": ["Slack", "Notion"],
+        "CI/CD": ["GitHub Actions (OIDC)", "AWS Terraform"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Wallet Auth (EIP-1271)",
+          "role": "Backend Lead",
+          "url": "https://www.waifusweeper.fun",
+          "description": "Full-stack wallet authentication compatible with smart-contract wallets (AA Wallet / Abstract Global Wallet) using EIP-1271 magic-value verification. Mitigated concurrent-login and zombie-account issues with token hash storage; enforced single algorithm at JWT verify to block algorithm confusion.",
+          "techStack": ["Bun", "Elysia", "viem", "ethers"]
         },
         {
-          "name": "Korea Women’s Human Rights Institute",
-          "role": "Full Stack",
-          "url": "http://edu.stop.or.kr",
-          "description": "Built full LMS frontend logic from sign-up to certificate printing; developed carousel animation and member flow logic.",
-          "techStack": ["JavaScript", "Spring", "HTML5", "CSS"]
+          "name": "On-chain Payment Verification (4-gate)",
+          "role": "Backend Lead",
+          "description": "Cross-validated receipt logs across sender / recipient / price / packageId; normalized txHash to keep duplicate credit at zero. Implemented EIP-712 typed-data payment signer with one-time-use nonces.",
+          "techStack": ["TypeScript", "viem", "ethers"]
         },
         {
-          "name": "Jeonghwa Arts University",
-          "role": "Full Stack",
-          "url": "http://jb.ac.kr",
-          "description": "Developed academic information system with CMS integration, including Chart.js visualizations, data tables, and API endpoints.",
-          "techStack": ["Spring", "MyBatis", "JavaScript", "HTML5", "CSS"]
+          "name": "Postgres-based Distributed Lock",
+          "role": "Backend Lead",
+          "description": "Self-built distributed lock via Postgres unique constraints + TTL-based release — applied to game actions, payments, and cron leader elections. Revert flows wrap validation + update in a single transaction to avoid TOCTOU.",
+          "techStack": ["TypeScript", "PostgreSQL", "Prisma"]
         },
         {
-          "name": "Childcare Meal Management Support Center",
-          "role": "Backend",
-          "url": "https://eip.ccfsm.or.kr/",
-          "description": "Built meal plan CMS, including editable menu features, recipe management, and nutrition statistics export.",
-          "techStack": ["Spring", "MyBatis", "JavaScript"]
+          "name": "YGG Partner API + Quest Pipeline",
+          "role": "Backend Lead",
+          "description": "Bidirectional HMAC signing + 30s dedup distributed lock for outsourced partner traffic security. EventEmitter-based fan-out for ~30 quest-clear callbacks; race-safe revert transactions for points reconciliation.",
+          "techStack": ["TypeScript", "Elysia", "Crypto"]
         },
         {
-          "name": "Meal Plan Service",
-          "role": "Backend",
-          "url": "https://menuplan.ccfsm.or.kr/",
-          "description": "Developed meal plan editing, API endpoints, and LMS business logic, enabling Excel nutrition statistics export.",
-          "techStack": ["Spring", "MyBatis", "JavaScript"]
+          "name": "AWS Terraform IaC",
+          "role": "Solo Infra",
+          "description": "Self-built AWS infrastructure: multi-AZ VPC, RDS, ALB, ECS, S3, CloudFront, ACM. Credential-less CI/CD via GitHub Actions OIDC.",
+          "techStack": ["Terraform", "AWS", "GitHub Actions"]
+        }
+      ]
+    },
+    "Gomble": {
+      "period": "Dec 2024 – Oct 2025",
+      "summary": "Tech Lead handling 4–60K req/sec at TGE events with 10K+ DAU. Established the team's server template and engineering conventions, transitioned the platform's HTTP engine from Express to Fastify (~15% per-core throughput gain), built minigame integration with key-based encryption, and introduced Redash to shorten event-decision lead times.",
+      "tools": {
+        "IDE": ["VS Code", "Cursor", "Neovim"],
+        "Groupware": ["Slack", "Figma", "Notion"],
+        "CI/CD": ["GitHub Actions", "AWS ECR/ECS"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Gomble Squad",
+          "role": "Tech Lead",
+          "description": "Implemented large-scale Launchpool #3 event; introduced Redash for business-level data visibility and analytics; refactored / migrated to the team server template.",
+          "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redash"]
         },
         {
-          "name": "Project Cygnus",
-          "role": "Full Stack",
-          "description": "E-commerce solution built with Spring and MyBatis; implemented product management, category handling, payment gateway integration, and preview features.",
-          "techStack": ["Spring", "MyBatis", "jQuery", "JavaScript"]
+          "name": "Integrated Mini Game Server",
+          "role": "Tech Lead",
+          "description": "Unified server for multiple minigames within Gomble Squad. Established the team's backend template + coding conventions. Added per-user encryption keys + integrity verification to secure the boundary between in-game currency and on-chain assets.",
+          "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redis"]
+        },
+        {
+          "name": "TGE Server",
+          "role": "Tech Lead",
+          "url": "https://token.gomble.io",
+          "description": "Handled 4–60K req/sec traffic during the token generation event. Switched HTTP engine to Fastify for ~15% per-core gain. Indexed Web3 assets internally for accurate event data.",
+          "techStack": ["TypeScript", "NestJS", "Fastify", "Web3", "AWS ECS"]
+        },
+        {
+          "name": "Gomble Builders",
+          "role": "Backend Engineer",
+          "description": "Developed an NFT-based voting system to select in-game characters. Implemented NFT indexing and optimized infrastructure costs via ECR/ECS.",
+          "techStack": ["TypeScript", "NestJS", "Web3", "AWS ECR/ECS"]
+        },
+        {
+          "name": "Mew Survivor",
+          "role": "Backend Engineer",
+          "description": "External game server with Google/Apple OAuth login and IAP logic.",
+          "techStack": ["TypeScript", "NestJS", "Google OAuth", "Apple OAuth"]
         }
       ]
     },
     "CatzeLabs": {
       "period": "Aug 2022 – Oct 2024",
-      "summary": "Led backend architecture for Web3 game platforms, token conversion systems, and internal tools. Contributed to four Web3 hackathon wins and ConsenSys investment. Migrated legacy batch systems to real-time processing and implemented secure communications with gRPC and 2FA.",
+      "summary": "Backend engineer on Yooldo, the company's P2E game publishing platform. Designed the deposit pipeline (Dual Deposit Finality / DDF) that cut on-chain settlement from 15 minutes to 15 seconds (60×). Built the company's unified backoffice (Slack OTP / QR 2FA / RBAC, gRPC server-to-server). Authored two internal libraries (Logger / Crypto). 4× Web3 hackathon wins (KlayMakers22, BNB Hackathon, Coinbase Buidl The Future, Aptos Seoul Hack 2023) — directly contributing to the company's ConsenSys investment.",
       "tools": {
         "IDE": ["VS Code", "Neovim"],
         "Groupware": ["Slack", "Figma", "Notion"],
-        "CI/CD": ["GitHub Actions", "K8S","EKS", "GCP"],
-        "VersionControl": ["Git/Github"]
+        "CI/CD": ["GitHub Actions", "ArgoCD", "K8S", "GCP", "EKS"],
+        "VersionControl": ["Git/GitHub"]
       },
       "projects": [
         {
-          "name": "Yooldo",
+          "name": "Yooldo — P2E Publishing Platform",
           "role": "Backend Lead",
           "url": "https://app.yooldo.gg",
-          "description": "Full backend development for NFT-based P2E platform serving 900K+ users. Implemented Web3 indexers, real-time token ↔ game currency conversions, Google OAuth, and anti-abuse judicial system.",
-          "techStack": ["TypeScript", "NestJS", "Web3", "Google OAuth", "Redis"]
-        },
-        {
-          "name": "Alice-bot",
-          "role": "Backend Engineer",
-          "description": "Discord bot for CyberGalz community integrating virtual currency economy and Twitter-based content filters; linked with other CatzeLabs products.",
-          "techStack": ["TypeScript", "Discord API", "Web3"]
-        },
-        {
-          "name": "KUP",
-          "role": "Hackathon Staff",
-          "url": "https://kup.vercel.app",
-          "description": "NFT & Metaverse hackathon project at KlayMakers22; awarded 1st place in track. Involved in initial planning and architecture discussions.",
-          "techStack": ["Next.js", "Web3"]
-        },
-        {
-          "name": "R3plica",
-          "role": "Backend Engineer",
-          "url": "https://r3plica-web.vercel.app",
-          "description": "Hackathon project winning 2nd place (BNB Chain) and 1st place (Coinbase Buidle The Future). Built backend APIs, table schema, and Web3 indexers.",
-          "techStack": ["TypeScript", "NestJS", "Web3"]
-        },
-        {
-          "name": "Aptoplay",
-          "role": "Backend Lead",
-          "url": "https://aptoplay-web.vercel.app/",
-          "description": "Hackathon-winning game platform (Aptos Seoul Hack 2023). Built complete backend and published aptoplay-core library to npm.",
-          "techStack": ["TypeScript", "NestJS", "Web3"]
-        },
-        {
-          "name": "Aptoplay-core",
-          "role": "Library Author",
-          "url": "https://www.npmjs.com/package/aptoplay-core",
-          "description": "Reusable library for Aptoplay; handles core Web3 gaming logic and state synchronization.",
-          "techStack": ["TypeScript", "NestJS"]
-        },
-        {
-          "name": "Trouble Punk Game Server",
-          "role": "Backend Engineer",
-          "description": "P2E game server for Cybergalz ‘Trouble-punk’ using Firebase Firestore; implemented league and reward settlement systems.",
-          "techStack": ["NestJS", "Firebase", "Web3"]
+          "description": "Full backend for an NFT-based P2E platform serving 900K+ users. Implemented Web3 indexers, real-time token ↔ in-game currency conversions, the DDF deposit pipeline (15min → 15s, 60×), Google OAuth, and an anti-abuse judicial system.",
+          "techStack": ["TypeScript", "NestJS", "Prisma", "Web3", "Google OAuth", "Redis"]
         },
         {
           "name": "Catze Backoffice",
           "role": "Backend Lead",
-          "description": "Comprehensive internal management system integrating Google OAuth, Slack OTP, and QR-based 2FA. Managed multiple products via unified dashboard.",
+          "description": "Company-wide internal management system — Google OAuth, Slack OTP, QR 2FA, RBAC, gRPC for server-to-server communication. Reduced engineering load by enabling non-engineering staff to operate multi-product workflows.",
           "techStack": ["TypeScript", "NestJS", "gRPC"]
         },
         {
           "name": "Catze Nest Logger",
           "role": "Library Author",
-          "description": "Decorator-based NestJS logger enabling automatic method tracing and log injection; initiated company-wide logging standards.",
+          "description": "Decorator-based NestJS logger enabling automatic method tracing and log injection; established company-wide logging standards. Co-built dashboards on Loki + Prometheus + Grafana.",
           "techStack": ["TypeScript", "NestJS"]
         },
         {
           "name": "Catze Nest Crypto",
           "role": "Library Author",
-          "description": "Bidirectional encryption library implementing envelope encryption; used across CatzeLabs internal services for secure payload handling.",
+          "description": "Envelope-encryption library (RSA + AES-256-CBC) provided as endpoint-level decorators; used across Catze internal services for secure payload handling.",
           "techStack": ["TypeScript", "NestJS", "Crypto"]
+        },
+        {
+          "name": "R3plica",
+          "role": "Backend Engineer",
+          "url": "https://r3plica-web.vercel.app",
+          "description": "Hackathon project — 2nd at BNB Hackathon, 1st at Coinbase Buidl The Future. Built backend APIs, schemas, and Web3 indexers.",
+          "techStack": ["TypeScript", "NestJS", "Web3"]
+        },
+        {
+          "name": "Aptoplay & aptoplay-core",
+          "role": "Backend Lead / Library Author",
+          "url": "https://aptoplay-web.vercel.app/",
+          "description": "Aptos Seoul Hack 2023 winner. Built the full backend and published aptoplay-core library to npm.",
+          "techStack": ["TypeScript", "NestJS", "Web3", "Aptos"]
+        },
+        {
+          "name": "KUP",
+          "role": "Hackathon Engineer",
+          "url": "https://kup.vercel.app",
+          "description": "KlayMakers22 — 1st in track. Initial planning and architecture discussions for an NFT/Metaverse hackathon project.",
+          "techStack": ["Next.js", "Web3"]
+        },
+        {
+          "name": "Alice-bot",
+          "role": "Backend Engineer",
+          "description": "Discord bot for CyberGalz — virtual currency economy + Twitter-based content filters; cross-product integration.",
+          "techStack": ["TypeScript", "Discord API", "Web3"]
+        },
+        {
+          "name": "Trouble Punk Game Server",
+          "role": "Backend Engineer",
+          "description": "P2E game server using Firebase Firestore — league system + reward settlement.",
+          "techStack": ["NestJS", "Firebase", "Web3"]
         },
         {
           "name": "Brickgirls",
           "role": "Backend Engineer",
-          "description": "Telegram Web3 game publishing platform; designed RDB schema, APIs, and Telegram Bot integration for gameplay events.",
+          "description": "Telegram Web3 game publishing platform — DB schema, APIs, Telegram Bot integration.",
           "techStack": ["NestJS", "Telegram Bot API", "Web3"]
         }
       ]
     },
-    "Gomble": {
-    "period": "Dec 2024 – Present",
-    "summary": "Serving as Tech Lead, handled large-scale events like TGE and Launchpool #3, ensuring stable processing of 4K–60K RPS traffic. Improved server infrastructure, backend code quality, and internal conventions while resolving technical debt and enhancing data visibility for business decisions.",
-    "tools": {
-      "IDE": ["VS Code", "Cursor", "Neovim"],
-      "Groupware": ["Slack", "Figma", "Notion"],
-      "CI/CD": ["GitHub Actions", "AWS ECR/ECS"],
-      "VersionControl": ["Git/Github"]
-    },
-    "projects": [
-      {
-        "name": "Minigame Server",
-        "role": "Backend Lead",
-        "description": "Unified server for multiple minigames within Gomble Squad. Established backend template and coding conventions across the team.",
-        "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redis"]
-      },
-      {
-        "name": "Gomble Squad",
-        "role": "Backend Lead",
-        "description": "Implemented large-scale Launchpool #3 event; introduced Redash for business-level data visibility and analytics.",
-        "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redash"]
-      },
-      {
-        "name": "TGE",
-        "role": "Backend Lead",
-        "url": "https://token.gomble.io",
-        "description": "Handled 4K–60K req/sec traffic during token generation event; integrated Web3 asset indexing for accurate event data processing.",
-        "techStack": ["TypeScript", "NestJS", "Web3", "AWS ECS"]
-      },
-      {
-        "name": "Gomble Builders",
-        "role": "Backend Engineer",
-        "description": "Developed NFT-based voting system to select in-game characters. Implemented NFT indexing and optimized infrastructure costs via ECR/ECS.",
-        "techStack": ["TypeScript", "NestJS", "Web3", "AWS ECR/ECS"]
-      },
-      {
-        "name": "Mew Survivor",
-        "role": "Backend Engineer",
-        "description": "External game server project integrating Google/Apple OAuth login and in-app purchase (IAP) logic.",
-        "techStack": ["TypeScript", "NestJS", "Google OAuth", "Apple OAuth"]
-      }
-    ]
-    },
-    "AIM Intelligence": {
-      "period": "Nov 2025 – Present",
-      "summary": "Serving as Backend Engineer, contributed to the development of a new product that helps businesses automate their workflows and improve their efficiency.",
+    "VSQUARE": {
+      "period": "Dec 2020 – Dec 2021",
+      "summary": "Full-stack development of CMS/LMS solutions across 7 simultaneous client projects. Drove engineering efficiency through self-learning and documentation culture, contributing to the company hitting prior-year revenue within two quarters.",
       "tools": {
-        "IDE": ["VS Code", "Cursor", "Neovim"],
-        "Groupware": ["Slack", "Eraser", "Linear", "Notion"],
-        "CI/CD": ["GitHub Actions", "AWS EKS"],
-        "VersionControl": ["Git/Github"]
+        "IDE": ["IntelliJ IDEA"],
+        "Groupware": ["Slack", "Zeplin", "FileZilla"],
+        "CI/CD": ["Jenkins"],
+        "VersionControl": ["Git/GitHub"]
       },
       "projects": [
         {
-          "name": "AI Guardrail and backoffice server",
-          "role": "Backend Engineer",
-          "description": "I’ve finished the architectural redesign and established the core patterns; the remaining work is mainly implementation, but completing it alone within the current timeline is difficult.",
-          "techStack": ["TypeScript", "NestJS", "Python", "FastAPI", "AWS EKS"]
+          "name": "Multi-Project Full-Stack Delivery",
+          "role": "Software Engineer",
+          "description": "Delivered BE/FE for 7 client projects: Jaseng Korean Medicine Hospital LMS, Childcare Meal Management Support Center, Korea Women's Human Rights Institute LMS, Jeonghwa Arts University, Chongshin University, and Project Cygnus (E-commerce).",
+          "techStack": ["Java", "Spring Boot", "MyBatis", "jQuery", "JavaScript"]
+        },
+        {
+          "name": "Highlights",
+          "role": "Software Engineer",
+          "description": "Bulk email dispatch, certificate PDF/Excel export (Apache POI), drag-and-drop meal planner with auto nutrient calculation, and a multi-PG payment system integrating Inicis + PayPal for global payments.",
+          "techStack": ["Java", "Spring Boot", "Apache POI", "PayPal API", "Inicis"]
         }
       ]
     }
   },
   "personalProjects": [
     {
-      "name": "Timespace",
-      "url": "https://github.com/JangVincent/TimeSpace",
-      "period": "Dec 2022 – Apr 2023",
-      "description": "VS Code extension displaying local and UTC time in the status bar",
-      "features": ["Todo list", "Alarm feature"],
-      "techStack": ["TypeScript", "VS Code API"]
+      "name": "Coagent (CLI + Desktop App)",
+      "url": "https://github.com/JangVincent/coagent",
+      "period": "2025 – Present",
+      "description": "Multi-agent chat — humans and multiple Claude Code agents collaborate in the same room via @mentions. CLI is the OSS core; Desktop App (Electron + Svelte 5) is the end-user product. Solves the Claude Agent SDK plain-text drop problem by enforcing a single MCP send_chat tool exit, and stabilizes SDK CLI spawn inside packaged GUIs via RunAsNode fuse + asar unpack + macOS Finder PATH recovery. In active use across my workplaces.",
+      "features": [
+        "9 slash control ops (clear / compact / usage / mode / model / pause / resume / kill, etc.)",
+        "Single-flight queue + session resume",
+        "Auto-update + Homebrew tap",
+        "Anti-spoof, room-scoped routing"
+      ],
+      "techStack": ["TypeScript", "Node.js", "Electron", "Svelte 5", "WebSocket", "Ink", "Claude Agent SDK", "MCP"]
     },
     {
-      "name": "txview",
-      "url": "https://github.com/JangVincent/txview",
-      "period": "Nov 2023 – Nov 2023",
-      "description": "CLI tool for viewing transactions",
-      "features": ["Transaction lookup", "Homebrew package distribution"],
-      "techStack": ["Rust", "CLI"]
+      "name": "Moonshine",
+      "url": "https://github.com/JangVincent/Moonshine",
+      "period": "2026",
+      "description": "Local-first knowledge graph desktop app — capture-only flow that auto-distills via embeddings + relation extraction in the background, visualizing the graph with Cytoscape.js. Server-zero, BYO API key. Built solo for macOS / Windows / Linux on a single Tauri + Svelte + Rust codebase. Distinguishing detail: a deadlock-free pattern interleaving sync SQLite locks with async AI calls (await-time mutex drop).",
+      "features": [
+        "Auto-distillation pipeline (state machine)",
+        "OpenAI / Gemini multi-LLM provider abstraction",
+        "Wayland DBus workaround for global shortcut parity",
+        "Homebrew Cask + GitHub Releases + Tauri auto-updater"
+      ],
+      "techStack": ["Tauri", "Svelte", "Rust", "SQLite (FTS5)", "OpenAI", "Gemini"]
+    },
+    {
+      "name": "Zettelkasten-CLI",
+      "url": "https://github.com/JangVincent/zettelkasten-cli",
+      "period": "2025 – 2026",
+      "description": "Terminal-native Zettelkasten knowledge management — Bun + TypeScript with 226 test cases across 12 releases. Models notes in 3 tiers (Fleeting → Zettel ← Literature) with promote-time auto-assignment of Luhmann-style alphanumeric IDs. Foreign-key policy preserves graph integrity across ID changes. Single-binary distribution with multi-step Web UI asset resolver works identically across Homebrew, curl install, and dev mode.",
+      "features": [
+        "3-tier note model with promote command",
+        "Reason-tagged links (support / refute / extend / contrast / question)",
+        "Cytoscape graph view + FTS5 search",
+        "Single-binary distribution (Linux / macOS x64·arm64)"
+      ],
+      "techStack": ["Bun", "TypeScript", "SQLite (FTS5)", "React", "Cytoscape.js"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "KlayMakers22 Hackathon",
+      "rank": "1st",
+      "project": "KUP"
+    },
+    {
+      "title": "BNB Hackathon Track #1: The Road towards Decentralized Society",
+      "rank": "2nd",
+      "project": "R3plica"
+    },
+    {
+      "title": "Coinbase Buidl The Future Track — Open Ideas",
+      "rank": "1st",
+      "project": "R3plica"
+    },
+    {
+      "title": "Aptos Seoul Hack 2023 — Gaming Track",
+      "rank": "1st",
+      "project": "AptoPlay (aptoplay-core lib)"
     }
   ],
   "education": {
     "school": "Seoul National University of Science and Technology",
-    "degree": "Bachelor’s in Computer Engineering",
+    "degree": "Bachelor's in Computer Engineering",
     "period": "Feb 2014 – Feb 2021"
   },
-  "licenses": ["Linux Master(KR) Level 2 (2015)", "TOEIC 720 (2021)"]
+  "licenses": ["Linux Master (KR) Level 2 — 2015", "TOEIC 720 — 2021"]
 }

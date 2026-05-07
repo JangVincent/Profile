@@ -27,17 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Profile image click event
-    const profileImage = document.getElementById('profileImage');
-    if (profileImage) {
-        profileImage.addEventListener('click', function() {
-            this.style.transform = 'scale(1.1) rotate(5deg)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1.05)';
-            }, 200);
-        });
-    }
-
     // Social links hover effects
     const socialLinks = document.querySelectorAll('.social-link');
     socialLinks.forEach(link => {
@@ -230,25 +219,20 @@ function updateProfilePage(data) {
     
     // Skills update
     if (data.skills) {
-        if (data.skills.languages) {
-            const languagesElement = document.getElementById('languagesSkills');
-            if (languagesElement) languagesElement.textContent = data.skills.languages.join(', ');
-        }
-        
-        if (data.skills.frameworksLibraries) {
-            const frameworksElement = document.getElementById('frameworksSkills');
-            if (frameworksElement) frameworksElement.textContent = data.skills.frameworksLibraries.join(', ');
-        }
-        
-        if (data.skills.cloudDevOps) {
-            const cloudElement = document.getElementById('cloudSkills');
-            if (cloudElement) cloudElement.textContent = data.skills.cloudDevOps.join(', ');
-        }
-        
-        if (data.skills.databases) {
-            const databaseElement = document.getElementById('databaseSkills');
-            if (databaseElement) databaseElement.textContent = data.skills.databases.join(', ');
-        }
+        const skillMap = {
+            languages: 'languagesSkills',
+            frameworksLibraries: 'frameworksSkills',
+            cloudDevOps: 'cloudSkills',
+            databases: 'databaseSkills',
+            web3: 'web3Skills',
+            observability: 'observabilitySkills',
+        };
+        Object.entries(skillMap).forEach(([key, elementId]) => {
+            if (Array.isArray(data.skills[key])) {
+                const el = document.getElementById(elementId);
+                if (el) el.textContent = data.skills[key].join(', ');
+            }
+        });
     }
     
     // Career update
@@ -308,6 +292,29 @@ function updateProfilePage(data) {
         }
     }
     
+    // Awards update
+    if (Array.isArray(data.awards) && data.awards.length > 0) {
+        const awardsGrid = document.getElementById('awardsGrid');
+        if (awardsGrid) {
+            awardsGrid.innerHTML = '';
+            data.awards.forEach(award => {
+                const awardItem = document.createElement('div');
+                awardItem.className = 'award-item';
+                awardItem.innerHTML = `
+                    <span class="material-icons award-icon">emoji_events</span>
+                    <div class="award-content">
+                        <h3>${award.title}</h3>
+                        <p>
+                            <span class="award-rank">${award.rank}</span>
+                            ${award.project ? `<span class="award-project">${award.project}</span>` : ''}
+                        </p>
+                    </div>
+                `;
+                awardsGrid.appendChild(awardItem);
+            });
+        }
+    }
+
     // Licenses update
     if (data.licenses && data.licenses.length > 0) {
         const licensesGrid = document.getElementById('licensesGrid');

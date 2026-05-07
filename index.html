@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Vincent Jang - Backend Engineer</title>
+    <title>Youngjin Jang (Vincent) — Backend Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,20 +14,16 @@
         <header class="header">
             <div class="profile-card">
                 <div class="profile-content-wrapper">
-                    <!-- Left Side: Image, Name, Title -->
+                    <!-- Left Side: Name, Title -->
                     <div class="profile-left">
-                        <div class="profile-image-container">
-                            <img src="./profile.png" alt="Profile" class="profile-image" id="profileImage">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <h1 class="profile-name" id="profileName">Vincent Jang</h1>
-                        <p class="profile-title" id="profileTitle">Backend Engineer</p>
+                        <h1 class="profile-name" id="profileName">Youngjin Jang (Vincent)</h1>
+                        <p class="profile-title" id="profileTitle">Backend Engineer · Tech Lead</p>
                     </div>
-                    
+
                     <!-- Right Side: Tagline and Bio -->
                     <div class="profile-right">
-                        <p class="profile-tagline" id="profileTagline">Rather than a engineer who shines alone, I aspire to be like the moon, harmonizing with the light of others.</p>
-                        <p class="profile-bio" id="profileBio">Backend engineer with an open mindset toward learning new languages and frameworks based on project needs.</p>
+                        <p class="profile-tagline" id="profileTagline">Rather than a developer who shines alone, I aspire to be one who — like the moon — glows in harmony with the light of others.</p>
+                        <p class="profile-bio" id="profileBio">Backend engineer with 5+ years of experience leading core systems at early-stage startups across Web2 SaaS and Web3.</p>
                     </div>
                 </div>
             </div>
@@ -36,6 +32,10 @@
         <!-- Social Links Section -->
         <section class="social-section">
             <div class="social-links" id="socialLinks">
+                <a href="https://vincentjang.dev" class="social-link" data-platform="homepage" target="_blank">
+                    <span class="material-icons">public</span>
+                    <span>Homepage</span>
+                </a>
                 <a href="https://github.com/JangVincent" class="social-link" data-platform="github" target="_blank">
                     <span class="material-icons">code</span>
                     <span>GitHub</span>
@@ -66,22 +66,32 @@
                 <div class="skill-card">
                     <span class="material-icons skill-icon">code</span>
                     <h3>Languages</h3>
-                    <p id="languagesSkills">TypeScript, JavaScript, Java, Rust</p>
+                    <p id="languagesSkills">TypeScript, JavaScript, Java, Go (basics), Rust (basics)</p>
                 </div>
                 <div class="skill-card">
                     <span class="material-icons skill-icon">storage</span>
                     <h3>Frameworks & Libraries</h3>
-                    <p id="frameworksSkills">NestJS, Fastify, Express, React, Vue, Spring</p>
+                    <p id="frameworksSkills">NestJS, Fastify, Elysia (Bun), Spring Boot</p>
                 </div>
                 <div class="skill-card">
                     <span class="material-icons skill-icon">cloud</span>
                     <h3>Cloud & DevOps</h3>
-                    <p id="cloudSkills">Docker, AWS ECR/ECS, Github Actions, GCP, Kubernetes</p>
+                    <p id="cloudSkills">AWS (ECS/EKS/RDS/CloudFront), GCP (Cloud Run), Kubernetes, Helm, Docker, Terraform, GitHub Actions (OIDC), ArgoCD</p>
                 </div>
                 <div class="skill-card">
                     <span class="material-icons skill-icon">database</span>
                     <h3>Databases</h3>
-                    <p id="databaseSkills">MySQL, MariaDB, Redis, PostgreSQL, MongoDB</p>
+                    <p id="databaseSkills">PostgreSQL, MySQL, MariaDB, Redis, SQLite (FTS5)</p>
+                </div>
+                <div class="skill-card">
+                    <span class="material-icons skill-icon">link</span>
+                    <h3>Web3</h3>
+                    <p id="web3Skills">viem, ethers, EVM (Abstract / Aptos / BNB / Klaytn), EIP-1271/712, NFT indexing</p>
+                </div>
+                <div class="skill-card">
+                    <span class="material-icons skill-icon">monitoring</span>
+                    <h3>Observability</h3>
+                    <p id="observabilitySkills">Loki, Prometheus, Grafana, Langfuse, Redash</p>
                 </div>
             </div>
         </section>
@@ -90,16 +100,16 @@
         <section class="experience-section">
             <h2 class="section-title">Experience</h2>
             <div class="experience-container">
-                <!-- Current Job -->
+                <!-- Most Recent Role -->
                 <div class="experience-current">
-                    <h3 class="experience-subtitle">Current</h3>
+                    <h3 class="experience-subtitle">Most Recent</h3>
                     <div class="experience-item current-job">
                         <div class="experience-icon">
                             <span class="material-icons">work</span>
                         </div>
                         <div class="experience-content">
                             <h3 id="currentJob">[Company] - [Position]</h3>
-                            <p id="currentJobPeriod">Current</p>
+                            <p id="currentJobPeriod">—</p>
                         </div>
                     </div>
                 </div>
@@ -143,6 +153,14 @@
                         <p id="graduationYear">[Period]</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="awards-section">
+            <h2 class="section-title">Awards</h2>
+            <div class="awards-grid" id="awardsGrid">
+                <!-- Awards will be dynamically added -->
             </div>
         </section>
 
