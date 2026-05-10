@@ -1,0 +1,346 @@
+{
+  "basicInfo": {
+    "name": "장영진 (Vincent)",
+    "title": "백엔드 엔지니어 · Tech Lead",
+    "tagline": "홀로 빛나는 개발자보다는, 달처럼 다른 이의 빛과 어우러져 빛나는 개발자가 되고자 합니다.",
+    "introduction": "Web2 SaaS와 Web3를 넘나들며 초기 단계 스타트업의 코어 시스템을 5년 이상 리드해온 백엔드 엔지니어입니다. 막연한 제품 아이디어를 엔터프라이즈 고객까지 확장 가능한 프로덕션급 백엔드로 만들어 다음 라운드 펀딩까지 끌고 가는 Zero-to-One 단계를 경험하고 이끌어본 경험이 있습니다. 신기술과 팀이 실제로 일하는 방식 사이의 간극을 좁히는 도구를 만드는 것을 좋아합니다."
+  },
+  "contact": {
+    "email": "vincentjangdev@gmail.com",
+    "location": "대한민국, 서울"
+  },
+  "socialLinks": {
+    "homepage": "https://vincentjang.dev",
+    "github": "https://github.com/JangVincent",
+    "linkedin": "https://www.linkedin.com/in/vincentjang/",
+    "devto": "https://dev.to/vincentjang",
+    "x": "https://x.com/vincent_j_dev",
+    "email": "mailto:vincentjangdev@gmail.com"
+  },
+  "skills": {
+    "languages": ["TypeScript", "JavaScript", "Java", "Go (기초)", "Rust (기초)"],
+    "frameworksLibraries": ["NestJS", "Fastify", "Elysia (Bun)", "Spring Boot"],
+    "databases": ["PostgreSQL", "MySQL", "MariaDB", "Redis", "SQLite (FTS5)"],
+    "cloudDevOps": [
+      "AWS (ECS/EKS/RDS/CloudFront)",
+      "GCP (Cloud Run)",
+      "Kubernetes",
+      "Helm",
+      "Docker",
+      "Terraform",
+      "GitHub Actions (OIDC)",
+      "ArgoCD"
+    ],
+    "tools": ["VS Code", "Cursor", "Neovim", "Slack", "Notion", "Figma", "Linear", "Insomnia", "Git", "GitHub"],
+    "web3": ["viem", "ethers", "EVM (Abstract / Aptos / BNB / Klaytn)", "EIP-1271/712", "NFT 인덱싱"],
+    "observability": ["Loki", "Prometheus", "Grafana", "Langfuse", "Redash"]
+  },
+  "career": [
+    {
+      "company": "AIM Intelligence",
+      "position": "백엔드 매니저",
+      "period": "2025.11 – 2026.05"
+    },
+    {
+      "company": "Waifu Sweeper",
+      "position": "백엔드 리드 (프리랜서 · w/ YGG)",
+      "period": "2025 · 프리랜서"
+    },
+    {
+      "company": "Gomble",
+      "position": "테크 리드",
+      "period": "2024.12 – 2025.10"
+    },
+    {
+      "company": "CatzeLabs Pte. Ltd.",
+      "position": "백엔드 엔지니어",
+      "period": "2022.08 – 2024.10"
+    },
+    {
+      "company": "VSQUARE",
+      "position": "소프트웨어 엔지니어",
+      "period": "2020.12 – 2021.12"
+    }
+  ],
+  "workProjects": {
+    "AIM Intelligence": {
+      "period": "2025.11 – 2026.05",
+      "summary": "두 개의 제품 — Starfort(어드민 컨트롤 플레인)와 Bastion-Guardian(Sub-20ms GenAI DLP 게이트웨이) — 의 v1.0을 단독으로 설계·출시. 6개월간 668 커밋, 약 95% 단독 기여. 회사의 시리즈 A 클로징에 직접 기여. 통신·금융권 한국 엔터프라이즈 파트너사(LG, 하나, 교보 등)에 SaaS와 On-Premise 양쪽으로 도입.",
+      "tools": {
+        "IDE": ["VS Code", "Cursor", "Neovim"],
+        "Groupware": ["Slack", "Linear", "Eraser", "Notion"],
+        "CI/CD": ["GitHub Actions (OIDC)", "AWS EKS (Helm)", "External Secrets"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Starfort — Admin Control Plane",
+          "role": "백엔드 매니저 (단독 아키텍트)",
+          "description": "AWS IAM에서 영감을 받은 Policy Engine 설계 — 회사→조직→프로젝트 Role 계층 자동 게이팅과 IAM 스타일 fine-grained 정책을 결합한 2단계 평가 모델. PostgreSQL 기반 Transactional Outbox로 외부 Langfuse와의 dual-write 일관성을 at-least-once로 보장 — Redis/SQS 추가 없이. Bastion-Guardian의 hot path 를 위한 single-flight 패턴과 인스턴스 간 invalidation 을 갖춘 3-tier 인메모리 캐시 구현. 읽기/쓰기 도메인 분리 모노레포(admin + bridge) 설계, EKS Helm + GitHub Actions OIDC 기반 credential-less CI/CD 구축.",
+          "techStack": ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "AWS EKS", "Helm", "GitHub Actions"]
+        },
+        {
+          "name": "Bastion-Guardian — GenAI DLP Gateway",
+          "role": "백엔드 매니저 (단독 아키텍트)",
+          "description": "계층화된 인메모리 캐시와 경량 pre-check 분기로 hot path 레이턴시 Sub-20ms 달성. Bun 런타임 + 단일 바이너리 + distroless 이미지로 빠른 콜드 스타트와 최소 공격 표면 확보. 14단계 파싱 DSL 설계, jq/WASM 의존성 없이 lexer/parser/AST 캐시/evaluator 를 포함한 자체 jq 미니 인터프리터를 구현해 이종 AI 서비스 프로토콜(ChatGPT REST JSON, M365 Copilot SignalR WebSocket, Claude, multipart, base64) 처리. OpenAI 호환 게이트웨이(API key drop-in) 와 미할당 상태에서의 silent recovery 를 지원하는 JWT + Serial Key 데스크톱 에이전트 플로우 제공.",
+          "techStack": ["Bun", "TypeScript", "zod", "jose", "pino", "Langfuse", "Helm", "distroless"]
+        }
+      ]
+    },
+    "Waifu Sweeper": {
+      "period": "2025 · 프리랜서",
+      "summary": "Abstract zk-rollup 기반 Web3 지갑 인증 마인스위퍼 RPG, NFT/SBT/Shop 컨트랙트와 함께 출시. YGG(Yield Guild Games) 와 Partner API 협업. 백엔드 커밋 60/61 단독 기여. 10K+ DAU, 누적 결제 1억 원+.",
+      "tools": {
+        "IDE": ["VS Code", "Neovim"],
+        "Groupware": ["Slack", "Notion"],
+        "CI/CD": ["GitHub Actions (OIDC)", "AWS Terraform"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Wallet Auth (EIP-1271)",
+          "role": "백엔드 리드",
+          "url": "https://www.waifusweeper.fun",
+          "description": "EIP-1271 magic-value 검증으로 스마트 컨트랙트 지갑(AA Wallet / Abstract Global Wallet) 호환 풀스택 지갑 인증 구현. 토큰 해시 저장으로 동시 로그인·좀비 계정 이슈 완화. JWT 검증 시 단일 알고리즘 강제로 algorithm confusion 차단.",
+          "techStack": ["Bun", "Elysia", "viem", "ethers"]
+        },
+        {
+          "name": "On-chain Payment Verification (4-gate)",
+          "role": "백엔드 리드",
+          "description": "sender / recipient / price / packageId 영수증 로그를 교차 검증, txHash 정규화로 중복 크레딧 0 유지. EIP-712 typed-data 결제 서명 + 일회용 nonce 적용.",
+          "techStack": ["TypeScript", "viem", "ethers"]
+        },
+        {
+          "name": "Postgres-based Distributed Lock",
+          "role": "백엔드 리드",
+          "description": "Postgres unique constraint + TTL 기반 release 로 자체 분산 락 구현 — 게임 액션, 결제, cron leader election 에 적용. revert 플로우는 검증과 업데이트를 한 트랜잭션으로 감싸 TOCTOU 회피.",
+          "techStack": ["TypeScript", "PostgreSQL", "Prisma"]
+        },
+        {
+          "name": "YGG Partner API + Quest Pipeline",
+          "role": "백엔드 리드",
+          "description": "외부 파트너 트래픽 보안용 양방향 HMAC 서명 + 30초 dedup 분산 락. 약 30개 퀘스트 클리어 콜백을 EventEmitter 기반으로 fan-out, 포인트 정합성을 위해 race-safe revert 트랜잭션 적용.",
+          "techStack": ["TypeScript", "Elysia", "Crypto"]
+        },
+        {
+          "name": "AWS Terraform IaC",
+          "role": "단독 인프라",
+          "description": "AWS 인프라 자체 구축: 멀티 AZ VPC, RDS, ALB, ECS, S3, CloudFront, ACM. GitHub Actions OIDC 기반 credential-less CI/CD.",
+          "techStack": ["Terraform", "AWS", "GitHub Actions"]
+        }
+      ]
+    },
+    "Gomble": {
+      "period": "2024.12 – 2025.10",
+      "summary": "TGE 이벤트에서 4–60K req/sec 트래픽 처리, 10K+ DAU. 팀 서버 템플릿과 엔지니어링 컨벤션 정립, 플랫폼 HTTP 엔진을 Express 에서 Fastify 로 전환(코어당 ~15% 처리량 향상), 키 기반 암호화로 미니게임 통합, Redash 도입으로 이벤트 의사결정 리드타임 단축.",
+      "tools": {
+        "IDE": ["VS Code", "Cursor", "Neovim"],
+        "Groupware": ["Slack", "Figma", "Notion"],
+        "CI/CD": ["GitHub Actions", "AWS ECR/ECS"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Gomble Squad",
+          "role": "테크 리드",
+          "description": "대규모 Launchpool #3 이벤트 구현, Redash 도입으로 비즈니스 레벨 데이터 가시성·분석 확보, 팀 서버 템플릿으로 리팩터링·마이그레이션.",
+          "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redash"]
+        },
+        {
+          "name": "Integrated Mini Game Server",
+          "role": "테크 리드",
+          "description": "Gomble Squad 내 다수 미니게임을 위한 통합 서버. 팀 백엔드 템플릿과 코딩 컨벤션 정립. 인게임 재화와 온체인 자산 사이의 경계를 지키기 위해 사용자별 암호화 키와 무결성 검증 추가.",
+          "techStack": ["TypeScript", "NestJS", "AWS ECS", "Redis"]
+        },
+        {
+          "name": "TGE Server",
+          "role": "테크 리드",
+          "url": "https://token.gomble.io",
+          "description": "TGE 이벤트 동안 4–60K req/sec 트래픽 처리. 코어당 ~15% 향상을 위해 HTTP 엔진을 Fastify 로 전환. 정확한 이벤트 데이터를 위해 Web3 자산을 내부 인덱싱.",
+          "techStack": ["TypeScript", "NestJS", "Fastify", "Web3", "AWS ECS"]
+        },
+        {
+          "name": "Gomble Builders",
+          "role": "백엔드 엔지니어",
+          "description": "인게임 캐릭터 선정용 NFT 기반 투표 시스템 개발. NFT 인덱싱 구현, ECR/ECS 로 인프라 비용 최적화.",
+          "techStack": ["TypeScript", "NestJS", "Web3", "AWS ECR/ECS"]
+        },
+        {
+          "name": "Mew Survivor",
+          "role": "백엔드 엔지니어",
+          "description": "Google/Apple OAuth 로그인과 IAP 로직을 갖춘 외부 게임 서버.",
+          "techStack": ["TypeScript", "NestJS", "Google OAuth", "Apple OAuth"]
+        }
+      ]
+    },
+    "CatzeLabs": {
+      "period": "2022.08 – 2024.10",
+      "summary": "회사의 P2E 게임 퍼블리싱 플랫폼 Yooldo 백엔드 엔지니어. 온체인 정산을 15분 → 15초(60×)로 단축한 Dual Deposit Finality(DDF) 입금 파이프라인 설계. 회사 통합 백오피스(Slack OTP / QR 2FA / RBAC, gRPC 서버 간 통신) 구축. 사내 라이브러리 2종(Logger / Crypto) 작성. Web3 해커톤 4회 우승(KlayMakers22, BNB Hackathon, Coinbase Buidl The Future, Aptos Seoul Hack 2023) — 회사의 ConsenSys 투자 유치에 직접 기여.",
+      "tools": {
+        "IDE": ["VS Code", "Neovim"],
+        "Groupware": ["Slack", "Figma", "Notion"],
+        "CI/CD": ["GitHub Actions", "ArgoCD", "K8S", "GCP", "EKS"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Yooldo — P2E Publishing Platform",
+          "role": "백엔드 리드",
+          "url": "https://app.yooldo.gg",
+          "description": "90만+ 사용자 NFT 기반 P2E 플랫폼 풀 백엔드. Web3 인덱서, 토큰↔인게임 재화 실시간 환전, DDF 입금 파이프라인(15분→15초, 60×), Google OAuth, 어뷰징 방지 사법 시스템 구현.",
+          "techStack": ["TypeScript", "NestJS", "Prisma", "Web3", "Google OAuth", "Redis"]
+        },
+        {
+          "name": "Catze Backoffice",
+          "role": "백엔드 리드",
+          "description": "회사 통합 사내 관리 시스템 — Google OAuth, Slack OTP, QR 2FA, RBAC, 서버 간 통신용 gRPC. 비엔지니어 인력이 멀티 프로덕트 워크플로우를 운영할 수 있게 해 엔지니어링 부담 감소.",
+          "techStack": ["TypeScript", "NestJS", "gRPC"]
+        },
+        {
+          "name": "Catze Nest Logger",
+          "role": "라이브러리 작성자",
+          "description": "NestJS 데코레이터 기반 로거 — 메서드 자동 트레이싱과 로그 주입을 지원해 사내 로깅 표준 정립. Loki + Prometheus + Grafana 대시보드 공동 구축.",
+          "techStack": ["TypeScript", "NestJS"]
+        },
+        {
+          "name": "Catze Nest Crypto",
+          "role": "라이브러리 작성자",
+          "description": "엔드포인트 레벨 데코레이터로 제공되는 envelope 암호화 라이브러리(RSA + AES-256-CBC). Catze 사내 서비스 전반의 보안 페이로드 처리에 사용.",
+          "techStack": ["TypeScript", "NestJS", "Crypto"]
+        },
+        {
+          "name": "R3plica",
+          "role": "백엔드 엔지니어",
+          "url": "https://r3plica-web.vercel.app",
+          "description": "해커톤 프로젝트 — BNB Hackathon 2위, Coinbase Buidl The Future 1위. 백엔드 API, 스키마, Web3 인덱서 구축.",
+          "techStack": ["TypeScript", "NestJS", "Web3"]
+        },
+        {
+          "name": "Aptoplay & aptoplay-core",
+          "role": "백엔드 리드 / 라이브러리 작성자",
+          "url": "https://aptoplay-web.vercel.app/",
+          "description": "Aptos Seoul Hack 2023 우승. 풀 백엔드 구현 및 aptoplay-core 라이브러리를 npm 에 퍼블리시.",
+          "techStack": ["TypeScript", "NestJS", "Web3", "Aptos"]
+        },
+        {
+          "name": "KUP",
+          "role": "해커톤 엔지니어",
+          "url": "https://kup.vercel.app",
+          "description": "KlayMakers22 — 트랙 1위. NFT/메타버스 해커톤 프로젝트 초기 기획 및 아키텍처 논의.",
+          "techStack": ["Next.js", "Web3"]
+        },
+        {
+          "name": "Alice-bot",
+          "role": "백엔드 엔지니어",
+          "description": "CyberGalz 디스코드 봇 — 가상 화폐 경제 + Twitter 기반 컨텐츠 필터, 크로스 프로덕트 통합.",
+          "techStack": ["TypeScript", "Discord API", "Web3"]
+        },
+        {
+          "name": "Trouble Punk Game Server",
+          "role": "백엔드 엔지니어",
+          "description": "Firebase Firestore 기반 P2E 게임 서버 — 리그 시스템과 보상 정산.",
+          "techStack": ["NestJS", "Firebase", "Web3"]
+        },
+        {
+          "name": "Brickgirls",
+          "role": "백엔드 엔지니어",
+          "description": "Telegram Web3 게임 퍼블리싱 플랫폼 — DB 스키마, API, Telegram Bot 통합.",
+          "techStack": ["NestJS", "Telegram Bot API", "Web3"]
+        }
+      ]
+    },
+    "VSQUARE": {
+      "period": "2020.12 – 2021.12",
+      "summary": "동시 진행 7개 클라이언트 프로젝트의 CMS/LMS 솔루션 풀스택 개발. 자기주도 학습과 문서화 문화로 엔지니어링 효율을 끌어올려, 회사가 두 분기 만에 전년도 매출을 달성하는 데 기여.",
+      "tools": {
+        "IDE": ["IntelliJ IDEA"],
+        "Groupware": ["Slack", "Zeplin", "FileZilla"],
+        "CI/CD": ["Jenkins"],
+        "VersionControl": ["Git/GitHub"]
+      },
+      "projects": [
+        {
+          "name": "Multi-Project Full-Stack Delivery",
+          "role": "소프트웨어 엔지니어",
+          "description": "7개 클라이언트 프로젝트 BE/FE 납품: 자생한방병원 LMS, 보육교사 급식관리지원센터, 한국여성인권진흥원 LMS, 정화예술대학교, 총신대학교, Project Cygnus(이커머스).",
+          "techStack": ["Java", "Spring Boot", "MyBatis", "jQuery", "JavaScript"]
+        },
+        {
+          "name": "Highlights",
+          "role": "소프트웨어 엔지니어",
+          "description": "대량 이메일 발송, 수료증 PDF/Excel 출력(Apache POI), 자동 영양소 계산이 포함된 드래그앤드롭 식단 플래너, Inicis + PayPal 통합 다중 PG 글로벌 결제 시스템.",
+          "techStack": ["Java", "Spring Boot", "Apache POI", "PayPal API", "Inicis"]
+        }
+      ]
+    }
+  },
+  "personalProjects": [
+    {
+      "name": "Coagent (CLI + Desktop App)",
+      "url": "https://github.com/JangVincent/coagent",
+      "period": "2025 – 현재",
+      "description": "다중 에이전트 채팅 — 사람과 여러 Claude Code 에이전트가 같은 룸에서 @멘션으로 협업. CLI는 OSS 코어, 데스크톱 앱(Electron + Svelte 5)은 엔드유저 제품. 단일 MCP send_chat 툴 exit 강제로 Claude Agent SDK 의 plain-text drop 문제 해결, RunAsNode fuse + asar unpack + macOS Finder PATH 복구로 패키징된 GUI 내 SDK CLI spawn 안정화. 현재 본인 워크플레이스에서 활발히 사용 중.",
+      "features": [
+        "9개 슬래시 컨트롤 ops (clear / compact / usage / mode / model / pause / resume / kill 등)",
+        "Single-flight 큐 + 세션 resume",
+        "자동 업데이트 + Homebrew tap",
+        "Anti-spoof, 룸 단위 라우팅"
+      ],
+      "techStack": ["TypeScript", "Node.js", "Electron", "Svelte 5", "WebSocket", "Ink", "Claude Agent SDK", "MCP"]
+    },
+    {
+      "name": "Moonshine",
+      "url": "https://github.com/JangVincent/Moonshine",
+      "period": "2026",
+      "description": "로컬 우선 지식 그래프 데스크톱 앱 — 캡처 전용 플로우, 임베딩 + 관계 추출로 백그라운드에서 자동 정제, Cytoscape.js로 그래프 시각화. 서버 제로, BYO API 키. macOS / Windows / Linux 를 단일 Tauri + Svelte + Rust 코드베이스로 단독 개발. 차별점: 동기 SQLite 락과 비동기 AI 호출을 인터리브하는 데드락 프리 패턴(await 시점에 mutex drop).",
+      "features": [
+        "자동 정제 파이프라인 (상태 머신)",
+        "OpenAI / Gemini 멀티 LLM 프로바이더 추상화",
+        "글로벌 단축키 패리티를 위한 Wayland DBus 우회",
+        "Homebrew Cask + GitHub Releases + Tauri auto-updater"
+      ],
+      "techStack": ["Tauri", "Svelte", "Rust", "SQLite (FTS5)", "OpenAI", "Gemini"]
+    },
+    {
+      "name": "Zettelkasten-CLI",
+      "url": "https://github.com/JangVincent/zettelkasten-cli",
+      "period": "2025 – 2026",
+      "description": "터미널 네이티브 Zettelkasten 지식 관리 — Bun + TypeScript, 12개 릴리즈에 걸친 226개 테스트 케이스. 노트를 3티어(Fleeting → Zettel ← Literature)로 모델링, promote 시점에 Luhmann 식 영숫자 ID 자동 부여. 외래 키 정책으로 ID 변경 시에도 그래프 무결성 유지. 단일 바이너리 배포 + 멀티 스텝 Web UI 에셋 리졸버로 Homebrew, curl install, 개발 모드에서 동일하게 동작.",
+      "features": [
+        "promote 명령이 있는 3티어 노트 모델",
+        "이유 태그 링크 (support / refute / extend / contrast / question)",
+        "Cytoscape 그래프 뷰 + FTS5 검색",
+        "단일 바이너리 배포 (Linux / macOS x64·arm64)"
+      ],
+      "techStack": ["Bun", "TypeScript", "SQLite (FTS5)", "React", "Cytoscape.js"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "KlayMakers22 Hackathon",
+      "rank": "1위",
+      "project": "KUP"
+    },
+    {
+      "title": "BNB Hackathon Track #1: The Road towards Decentralized Society",
+      "rank": "2위",
+      "project": "R3plica"
+    },
+    {
+      "title": "Coinbase Buidl The Future Track — Open Ideas",
+      "rank": "1위",
+      "project": "R3plica"
+    },
+    {
+      "title": "Aptos Seoul Hack 2023 — Gaming Track",
+      "rank": "1위",
+      "project": "AptoPlay (aptoplay-core lib)"
+    }
+  ],
+  "education": {
+    "school": "서울과학기술대학교",
+    "degree": "컴퓨터공학 학사",
+    "period": "2014.02 – 2021.02"
+  },
+  "licenses": ["리눅스 마스터 (KR) 2급 — 2015", "TOEIC 720 — 2021"]
+}
