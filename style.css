@@ -215,35 +215,36 @@ body {
 .sb-info {
   color: var(--text-muted);
 }
-.sb-lang {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 0 8px 0 4px;
-  border-right: 1px solid var(--border-strong);
-  margin-right: 4px;
+/* Language tabs (top of sidebar) */
+.lang-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--border-strong);
+  margin-bottom: 20px;
+  font-variant-ligatures: none;
 }
-.sb-lang-btn {
+.lang-btn {
   background: none;
   border: 0;
-  color: var(--text-muted);
+  color: var(--text-dim);
   font: inherit;
-  font-size: 10px;
-  letter-spacing: 1px;
-  padding: 2px 4px;
-  cursor: pointer;
+  font-size: var(--fs-sm);
   font-weight: 600;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
 }
-.sb-lang-btn:hover {
+.lang-btn + .lang-btn {
+  border-left: 1px solid var(--border-strong);
+}
+.lang-btn:hover {
   color: var(--text);
+  background: var(--bg-hover);
 }
-.sb-lang-btn.active {
+.lang-btn.active {
   color: var(--accent);
-}
-.sb-lang-sep {
-  color: var(--text-muted);
-  font-size: 10px;
-  user-select: none;
+  background: var(--accent-bg);
 }
 
 /* ─────────────────────────────────────────────────────────

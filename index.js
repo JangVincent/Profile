@@ -190,7 +190,7 @@ async function loadProfile() {
 
 function initLangToggle() {
   document.documentElement.lang = currentLang
-  const buttons = document.querySelectorAll('.sb-lang-btn')
+  const buttons = document.querySelectorAll('.lang-btn')
   buttons.forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.lang === currentLang)
     btn.addEventListener('click', async () => {
