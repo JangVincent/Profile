@@ -33,7 +33,7 @@ const FILES = [
   { path: 'experience/gomble/mew-survivor.ts', kind: 'project', co: 'Gomble', idx: 4 },
 
   { path: 'experience/catzelabs/_summary.md', kind: 'company', co: 'CatzeLabs' },
-  { path: 'experience/catzelabs/yooldo.ts', kind: 'project', co: 'CatzeLabs', idx: 0 },
+  { path: 'experience/catzelabs/gamefi-platform.ts', kind: 'project', co: 'CatzeLabs', idx: 0 },
   { path: 'experience/catzelabs/backoffice.ts', kind: 'project', co: 'CatzeLabs', idx: 1 },
   { path: 'experience/catzelabs/nest-logger.ts', kind: 'project', co: 'CatzeLabs', idx: 2 },
   { path: 'experience/catzelabs/nest-crypto.ts', kind: 'project', co: 'CatzeLabs', idx: 3 },

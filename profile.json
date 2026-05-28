@@ -175,7 +175,7 @@
     },
     "CatzeLabs": {
       "period": "Aug 2022 – Oct 2024",
-      "summary": "Backend engineer on Yooldo, the company's P2E game publishing platform. Designed the deposit pipeline (Dual Deposit Finality / DDF) that cut on-chain settlement from 15 minutes to 15 seconds (60×). Built the company's unified backoffice (Slack OTP / QR 2FA / RBAC, gRPC server-to-server). Authored two internal libraries (Logger / Crypto). 4× Web3 hackathon wins (KlayMakers22, BNB Hackathon, Coinbase Buidl The Future, Aptos Seoul Hack 2023) — directly contributing to the company's ConsenSys investment.",
+      "summary": "Backend engineer on the company's flagship Web3 GameFi publishing platform. Designed the deposit pipeline (Dual Deposit Finality / DDF) that cut on-chain settlement from 15 minutes to 15 seconds (60×). Built the company's unified backoffice (Slack OTP / QR 2FA / RBAC, gRPC server-to-server). Authored two internal libraries (Logger / Crypto). 4× Web3 hackathon wins (KlayMakers22, BNB Hackathon, Coinbase Buidl The Future, Aptos Seoul Hack 2023) — directly contributing to the company's ConsenSys investment.",
       "tools": {
         "IDE": ["VS Code", "Neovim"],
         "Groupware": ["Slack", "Figma", "Notion"],
@@ -184,14 +184,13 @@
       },
       "projects": [
         {
-          "name": "Yooldo — P2E Publishing Platform",
+          "name": "Web3 GameFi Publishing Platform",
           "role": "Backend Lead",
-          "url": "https://app.yooldo.gg",
-          "description": "Full backend for an NFT-based P2E platform serving 900K+ users. Implemented Web3 indexers, real-time token ↔ in-game currency conversions, the DDF deposit pipeline (15min → 15s, 60×), Google OAuth, and an anti-abuse judicial system.",
+          "description": "Full backend for an NFT-based Web3 GameFi platform serving 900K+ users. Implemented Web3 indexers, real-time token ↔ in-game currency conversions, the DDF deposit pipeline (15min → 15s, 60×), Google OAuth, and an anti-abuse judicial system.",
           "techStack": ["TypeScript", "NestJS", "Prisma", "Web3", "Google OAuth", "Redis"]
         },
         {
-          "name": "Catze Backoffice",
+          "name": "Backoffice",
           "role": "Backend Lead",
           "description": "Company-wide internal management system — Google OAuth, Slack OTP, QR 2FA, RBAC, gRPC for server-to-server communication. Reduced engineering load by enabling non-engineering staff to operate multi-product workflows.",
           "techStack": ["TypeScript", "NestJS", "gRPC"]

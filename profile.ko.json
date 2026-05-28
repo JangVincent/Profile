@@ -175,7 +175,7 @@
     },
     "CatzeLabs": {
       "period": "2022.08 – 2024.10",
-      "summary": "회사의 P2E 게임 퍼블리싱 플랫폼 Yooldo 백엔드 엔지니어. 온체인 정산을 15분 → 15초(60×)로 단축한 Dual Deposit Finality(DDF) 입금 파이프라인 설계. 회사 통합 백오피스(Slack OTP / QR 2FA / RBAC, gRPC 서버 간 통신) 구축. 사내 라이브러리 2종(Logger / Crypto) 작성. Web3 해커톤 4회 우승(KlayMakers22, BNB Hackathon, Coinbase Buidl The Future, Aptos Seoul Hack 2023) — 회사의 ConsenSys 투자 유치에 직접 기여.",
+      "summary": "회사의 대표 Web3 GameFi 퍼블리싱 플랫폼 백엔드 엔지니어. 온체인 정산을 15분 → 15초(60×)로 단축한 Dual Deposit Finality(DDF) 입금 파이프라인 설계. 회사 통합 백오피스(Slack OTP / QR 2FA / RBAC, gRPC 서버 간 통신) 구축. 사내 라이브러리 2종(Logger / Crypto) 작성. Web3 해커톤 4회 우승(KlayMakers22, BNB Hackathon, Coinbase Buidl The Future, Aptos Seoul Hack 2023) — 회사의 ConsenSys 투자 유치에 직접 기여.",
       "tools": {
         "IDE": ["VS Code", "Neovim"],
         "Groupware": ["Slack", "Figma", "Notion"],
@@ -184,14 +184,13 @@
       },
       "projects": [
         {
-          "name": "Yooldo — P2E Publishing Platform",
+          "name": "Web3 GameFi Publishing Platform",
           "role": "백엔드 리드",
-          "url": "https://app.yooldo.gg",
-          "description": "90만+ 사용자 NFT 기반 P2E 플랫폼 풀 백엔드. Web3 인덱서, 토큰↔인게임 재화 실시간 환전, DDF 입금 파이프라인(15분→15초, 60×), Google OAuth, 어뷰징 방지 사법 시스템 구현.",
+          "description": "90만+ 사용자 NFT 기반 Web3 GameFi 플랫폼 풀 백엔드. Web3 인덱서, 토큰↔인게임 재화 실시간 환전, DDF 입금 파이프라인(15분→15초, 60×), Google OAuth, 어뷰징 방지 사법 시스템 구현.",
           "techStack": ["TypeScript", "NestJS", "Prisma", "Web3", "Google OAuth", "Redis"]
         },
         {
-          "name": "Catze Backoffice",
+          "name": "Backoffice",
           "role": "백엔드 리드",
           "description": "회사 통합 사내 관리 시스템 — Google OAuth, Slack OTP, QR 2FA, RBAC, 서버 간 통신용 gRPC. 비엔지니어 인력이 멀티 프로덕트 워크플로우를 운영할 수 있게 해 엔지니어링 부담 감소.",
           "techStack": ["TypeScript", "NestJS", "gRPC"]
